@@ -55,4 +55,13 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = service('session');
     }
+
+    protected function schoolInfo()
+    {
+        return [
+            'email'     => 'sdnpengasinantujuh@gmail.com',
+            'address'   => 'Jl. Telaga Sarangan I RT 08/08',
+
+        ];
+    }
 }

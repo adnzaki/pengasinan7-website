@@ -58,7 +58,10 @@ class Autoload extends AutoloadConfig
      *
      * @var array<string, string>
      */
-    public $classmap = [];
+    public $classmap = [
+        'OstiumDate'    => APPPATH . 'Libraries/OstiumDate/OstiumDate.php',
+        'WpAdapter'     => APPPATH . 'Libraries/WpAdapter.php'
+    ];
 
     /**
      * -------------------------------------------------------------------
