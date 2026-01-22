@@ -59,6 +59,7 @@ abstract class BaseController extends Controller
     protected function schoolInfo()
     {
         return [
+            'visi'      => 'Mewujudkan insan berprestasi, berakhlak mulia dan berkarakter',
             'email'     => 'sdnpengasinantujuh@gmail.com',
             'address'   => 'Jl. Telaga Sarangan I RT 08/08',
 
