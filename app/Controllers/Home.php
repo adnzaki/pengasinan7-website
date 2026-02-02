@@ -9,18 +9,21 @@ class Home extends BaseController
         $schoolInfo = $this->schoolInfo();
         $heros = [
             [
-                'title'         => 'Selamat datang di website resmi SDN Pengasinan VII',
-                'subtitle'      => 'Membangun masa depan yang lebih cerah melalui pendidikan yang berkualitas <br/>alsndlkanfdk lnsdfjdsfjsbd fbsdjfbds',
-                'image'         => 'sdn-hero-1',
+                'title'     => 'Menyalakan Masa Depan Lewat Pendidikan Berkualitas',
+                'subtitle'  => 'Sekolah kami hadir dengan pembelajaran aktif, guru berdedikasi, dan lingkungan yang mendukung tumbuh kembang anak secara holistik.',
+                'strike'    => 'Berkualitas',
+                'image'     => 'sdn-hero-1',
             ],
             [
-                'title'     => 'Berkomitmen dalam mewujudkan visi yang mulia',
-                'subtitle'  => $schoolInfo['visi'],
+                'title'     => 'Tempat Terbaik Untuk Anak Tumbuh, Belajar, dan Bermimpi',
+                'subtitle'  => 'Di sekolah kami, setiap anak diberi ruang untuk berkembang, mengeksplorasi bakat, dan meraih cita-cita dengan percaya diri.',
+                'strike'    => 'Bermimpi',
                 'image'     => 'sdn-hero-2',
             ],
             [
-                'title'     => 'Mari bergabung bersama kami di SDN Pengasinan VII',
-                'subtitle'  => 'Tempat terbaik untuk putra-putri anda tumbuh dan berkembang',
+                'title'     => 'Membangun Pondasi Hebat untuk Generasi Cemerlang',
+                'subtitle'  => 'Pendidikan dasar yang kuat adalah kunci masa depan. Kami berkomitmen memberikan pengalaman belajar yang menyenangkan dan bermakna.',
+                'strike'    => 'Cemerlang',
                 'image'     => 'sdn-hero-3',
             ],
         ];
