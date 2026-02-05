@@ -9,19 +9,19 @@ class Home extends BaseController
         $schoolInfo = $this->schoolInfo();
         $heros = [
             [
-                'title'     => 'Menyalakan Masa Depan Lewat Pendidikan Berkualitas',
+                'title'     => 'Menghadirkan Masa Depan Yang Berkualitas',
                 'subtitle'  => 'Sekolah kami hadir dengan pembelajaran aktif, guru berdedikasi, dan lingkungan yang mendukung tumbuh kembang anak secara holistik.',
                 'strike'    => 'Berkualitas',
                 'image'     => 'sdn-hero-1',
             ],
             [
-                'title'     => 'Tempat Terbaik Untuk Anak Tumbuh, Belajar, dan Bermimpi',
+                'title'     => 'Tempat Terbaik Untuk Tumbuh dan Belajar',
                 'subtitle'  => 'Di sekolah kami, setiap anak diberi ruang untuk berkembang, mengeksplorasi bakat, dan meraih cita-cita dengan percaya diri.',
                 'strike'    => 'Bermimpi',
                 'image'     => 'sdn-hero-2',
             ],
             [
-                'title'     => 'Membangun Pondasi Hebat untuk Generasi Cemerlang',
+                'title'     => 'Membangun Pondasi Generasi Cemerlang',
                 'subtitle'  => 'Pendidikan dasar yang kuat adalah kunci masa depan. Kami berkomitmen memberikan pengalaman belajar yang menyenangkan dan bermakna.',
                 'strike'    => 'Cemerlang',
                 'image'     => 'sdn-hero-3',
@@ -59,6 +59,7 @@ class Home extends BaseController
         $views = [
             view('home/hero-slider', $data),
             view('home/feature', $data),
+            view('home/about', $data),
             view('home/sections', $data),
         ];
 
