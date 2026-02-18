@@ -3,10 +3,18 @@
   padding: 5px;
 }
 
+.about-thumbnail {
+  width: 273px !important;
+}
+
 @media (max-width: 576px) {
   .header-logo {
     max-height: 45px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .about-thumbnail {
+    width: 300px;
   }
 }
