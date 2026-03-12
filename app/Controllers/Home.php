@@ -62,6 +62,8 @@ class Home extends BaseController
             view('home/feature', $data),
             view('home/about', $data),
             view('home/ekskul', $data),
+            view('home/testimonial', $data),
+            view('home/partner', $data),
             view('home/sections', $data),
         ];
 
