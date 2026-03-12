@@ -8,6 +8,7 @@
 .LSOverride
 
 public/template
+cms
 
 # OS X Thumbnails
 ._*
