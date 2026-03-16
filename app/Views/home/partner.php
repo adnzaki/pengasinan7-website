@@ -32,40 +32,24 @@
             <div class="col-xl-6 col-lg-6 wow itfadeRight" data-wow-duration=".9s"
                 data-wow-delay=".7s">
                 <div class="it-brand-3-wrap">
-                    <div class="row gx-0 row-cols-xl-3">
-                        <div class="col">
-                            <div class="it-brand-3-item style-1">
-                                <img src="<?= base_url('assets/img/brand/brand-1-1.png'); ?>" alt="">
+                    <div class="row gx-0">
+                        <div class="col-6" style="border-right: solid 1px #a8a8a8b4;">
+                            <div class="it-brand-item style-1 text-center">
+                                <a href="https://actudent.com" target="_blank" class="partner-logo">
+                                    <img src="<?= base_url('assets/img/partner/actudent.png'); ?>" alt="">
+                                </a>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="it-brand-3-item style-2 text-center">
-                                <img src="<?= base_url('assets/img/brand/brand-1-2.png'); ?>" alt="">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="it-brand-3-item style-3 text-end">
-                                <img src="<?= base_url('assets/img/brand/brand-1-4.png'); ?>" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-0 row-cols-xl-3">
-                        <div class="col">
-                            <div class="it-brand-3-item style-1">
-                                <img src="<?= base_url('assets/img/brand/brand-1-3.png'); ?>" alt="">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="it-brand-3-item style-2 text-center">
-                                <img src="<?= base_url('assets/img/brand/brand-1-5.png'); ?>" alt="">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="it-brand-3-item style-3 text-end">
-                                <img src="<?= base_url('assets/img/brand/brand-1-6.png'); ?>" alt="">
+
+                        <div class="col-6">
+                            <div class="it-brand-item style-1 text-center">
+                                <a href="https://www.instagram.com/pecindonesia?igsh=MTIxMndudTJ5enJqMw==" target="_blank" class="partner-logo">
+                                    <img src="<?= base_url('assets/img/partner/pec.webp'); ?>" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
