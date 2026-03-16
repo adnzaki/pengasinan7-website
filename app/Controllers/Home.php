@@ -79,7 +79,7 @@ class Home extends BaseController
                 'name'          => 'Pramuka',
                 'description'   => 'Mengajarkan keterampilan bertahan hidup, kepemimpinan, dan kerja sama tim melalui berbagai aktivitas di alam terbuka.',
                 'category'      => 'keterampilan',
-                'image'         => 'default.jpg',
+                'image'         => 'pramuka.webp',
                 'teacher'       => 2,
                 'students'      => 470,
             ],
