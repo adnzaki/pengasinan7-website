@@ -20,8 +20,8 @@
                                 </svg>
                             </i>
                             <span>
-                                <span class="text-1">Back to Homepage</span>
-                                <span class="text-2">Back to Homepage</span>
+                                <span class="text-1">Kembali ke Halaman Utama</span>
+                                <span class="text-2">Kembali ke Halaman Utama</span>
                             </span>
                         </a>
                     </div>
