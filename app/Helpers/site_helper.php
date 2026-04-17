@@ -1,5 +1,17 @@
 <?php
 
+function excerpt_words($text, $limit = 20)
+{
+    // Pecah string jadi array kata
+    $words = explode(' ', $text);
+
+    // Ambil hanya sejumlah kata sesuai limit
+    $excerpt = array_slice($words, 0, $limit);
+
+    // Gabungkan kembali jadi string
+    return implode(' ', $excerpt) . (count($words) > $limit ? '...' : '');
+}
+
 if (! function_exists('insert_visitor')) {
     /**
      * Insert new site visitor

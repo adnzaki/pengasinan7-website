@@ -194,11 +194,11 @@
 <!-- blog-area-end -->
 
 <!-- newsletter-area-start -->
-<div class="it-newsletter-area it-newsletter-style-2">
+<!-- <div class="it-newsletter-area it-newsletter-style-2">
     <div class="container">
         <div class="it-newsletter-wrap theme-bg z-index-2 wow itfadeUp" data-wow-duration=".9s"
             data-wow-delay=".3s">
-            <img class="it-newsletter-shape-1" src="<?= base_url('assets/img/shape/newsletter-2-1.png'); ?>" alt="">
+            <img class="it-newsletter-shape-1" src="<?//= base_url('assets/img/shape/newsletter-2-1.png'); ?>" alt="">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="it-newsletter-2-left">
@@ -220,5 +220,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- newsletter-area-end -->

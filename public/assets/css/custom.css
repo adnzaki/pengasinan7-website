@@ -11,6 +11,10 @@
   max-width: 100px !important;
 }
 
+.footer-right-border {
+  border-right: solid 1px #a8a8a8b4;
+}
+
 @media (max-width: 576px) {
   .header-logo {
     max-height: 45px;

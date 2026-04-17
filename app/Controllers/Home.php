@@ -2,8 +2,17 @@
 
 namespace App\Controllers;
 
+use App\Models\StaticSiteModel;
+
 class Home extends BaseController
 {
+    protected $staticSiteModel;
+
+    public function __construct()
+    {
+        $this->staticSiteModel = new StaticSiteModel();
+    }
+
     public function index(): string
     {
         $schoolInfo = $this->schoolInfo();
@@ -55,6 +64,7 @@ class Home extends BaseController
             'title'         => $schoolInfo['visi'],
             'features'      => $features,
             'ekskuls'       => array_slice($this->ekskul(), 0, 3),
+            'testimonials'  => $this->staticSiteModel->testimonials(),
         ];
 
         $views = [

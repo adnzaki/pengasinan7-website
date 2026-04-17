@@ -20,192 +20,42 @@
                 <div class="it-testimonial-wrapper p-relative">
                     <div class="swiper it-testimonial-active">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="it-testimonial-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5 col-md-5">
-                                            <div class="it-testimonial-thumb border-radius-20">
-                                                <img src="<?= base_url('assets/img/testimonial/thumb-1-4.jpg'); ?>" alt="">
+                            <?php foreach ($testimonials as $testimonial) : ?>
+                                <div class="swiper-slide">
+                                    <div class="it-testimonial-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-5 col-md-5">
+                                                <div class="it-testimonial-thumb border-radius-20">
+                                                    <img src="<?= base_url('assets/img/testimonial/' . $testimonial['image']); ?>" alt="">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-7 col-md-7">
-                                            <div class="it-testimonial-content">
-                                                <div class="it-testimonial-quote mb-35">
-                                                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10 0.0849609H5C3.67392 0.0849609 2.40215 0.611745 1.46447 1.54943C0.526784 2.48711 0 3.75888 0 5.08496L0 10.085C0 10.748 0.263392 11.3839 0.732233 11.8527C1.20107 12.3216 1.83696 12.585 2.5 12.585H9.8875C9.59091 14.3306 8.68685 15.9153 7.33504 17.059C5.98323 18.2026 4.27069 18.8317 2.5 18.835C2.16848 18.835 1.85054 18.9667 1.61612 19.2011C1.3817 19.4355 1.25 19.7534 1.25 20.085C1.25 20.4165 1.3817 20.7344 1.61612 20.9688C1.85054 21.2033 2.16848 21.335 2.5 21.335C5.15125 21.332 7.69306 20.2775 9.56778 18.4027C11.4425 16.528 12.497 13.9862 12.5 11.335V2.58496C12.5 1.92192 12.2366 1.28603 11.7678 0.817194C11.2989 0.348353 10.663 0.0849609 10 0.0849609Z" fill="#4C505B" />
-                                                        <path d="M27.5 0.0849609H22.5C21.1739 0.0849609 19.9021 0.611745 18.9645 1.54943C18.0268 2.48711 17.5 3.75888 17.5 5.08496V10.085C17.5 10.748 17.7634 11.3839 18.2322 11.8527C18.7011 12.3216 19.337 12.585 20 12.585H27.3875C27.0909 14.3306 26.1868 15.9153 24.835 17.059C23.4832 18.2026 21.7707 18.8317 20 18.835C19.6685 18.835 19.3505 18.9667 19.1161 19.2011C18.8817 19.4355 18.75 19.7534 18.75 20.085C18.75 20.4165 18.8817 20.7344 19.1161 20.9688C19.3505 21.2033 19.6685 21.335 20 21.335C22.6513 21.332 25.1931 20.2775 27.0678 18.4027C28.9425 16.528 29.997 13.9862 30 11.335V2.58496C30 1.92192 29.7366 1.28603 29.2678 0.817194C28.7989 0.348353 28.163 0.0849609 27.5 0.0849609Z" fill="#4C505B" />
-                                                    </svg>
-                                                </div>
-                                                <div class="it-testimonial-text">
-                                                    <h5 class="mb-30">Educeet transformed my learning journey! The platform is intuitive, the courses are top-notch, and the support is exceptional. I’ve gained real skills and confidence. Highly recommended for anyone serious about education.</h5>
-                                                </div>
-                                                <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">
-                                                    <div class="it-testimonial-avatar-info">
-                                                        <h5 class="it-testimonial-avatar-name">Michelle Logan</h5>
-                                                        <span>Foundr & CEO UIPainter</span>
+                                            <div class="col-lg-7 col-md-7">
+                                                <div class="it-testimonial-content">
+                                                    <div class="it-testimonial-quote mb-35">
+                                                        <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10 0.0849609H5C3.67392 0.0849609 2.40215 0.611745 1.46447 1.54943C0.526784 2.48711 0 3.75888 0 5.08496L0 10.085C0 10.748 0.263392 11.3839 0.732233 11.8527C1.20107 12.3216 1.83696 12.585 2.5 12.585H9.8875C9.59091 14.3306 8.68685 15.9153 7.33504 17.059C5.98323 18.2026 4.27069 18.8317 2.5 18.835C2.16848 18.835 1.85054 18.9667 1.61612 19.2011C1.3817 19.4355 1.25 19.7534 1.25 20.085C1.25 20.4165 1.3817 20.7344 1.61612 20.9688C1.85054 21.2033 2.16848 21.335 2.5 21.335C5.15125 21.332 7.69306 20.2775 9.56778 18.4027C11.4425 16.528 12.497 13.9862 12.5 11.335V2.58496C12.5 1.92192 12.2366 1.28603 11.7678 0.817194C11.2989 0.348353 10.663 0.0849609 10 0.0849609Z" fill="#4C505B" />
+                                                            <path d="M27.5 0.0849609H22.5C21.1739 0.0849609 19.9021 0.611745 18.9645 1.54943C18.0268 2.48711 17.5 3.75888 17.5 5.08496V10.085C17.5 10.748 17.7634 11.3839 18.2322 11.8527C18.7011 12.3216 19.337 12.585 20 12.585H27.3875C27.0909 14.3306 26.1868 15.9153 24.835 17.059C23.4832 18.2026 21.7707 18.8317 20 18.835C19.6685 18.835 19.3505 18.9667 19.1161 19.2011C18.8817 19.4355 18.75 19.7534 18.75 20.085C18.75 20.4165 18.8817 20.7344 19.1161 20.9688C19.3505 21.2033 19.6685 21.335 20 21.335C22.6513 21.332 25.1931 20.2775 27.0678 18.4027C28.9425 16.528 29.997 13.9862 30 11.335V2.58496C30 1.92192 29.7366 1.28603 29.2678 0.817194C28.7989 0.348353 28.163 0.0849609 27.5 0.0849609Z" fill="#4C505B" />
+                                                        </svg>
                                                     </div>
-                                                    <img src="<?= base_url('assets/img/testimonial/icon.png'); ?>" alt="">
+                                                    <div class="it-testimonial-text">
+                                                        <h5 class="mb-30">
+                                                            <?= excerpt_words($testimonial['description']) ?>
+                                                            <span><a style="font-size: small;" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://">Baca Selengkapnya...</a></span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">
+                                                        <div class="it-testimonial-avatar-info">
+                                                            <h5 class="it-testimonial-avatar-name"><?= $testimonial['name'] ?></h5>
+                                                            <span><?= $testimonial['currentSchool'] ?></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="it-testimonial-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5 col-md-5">
-                                            <div class="it-testimonial-thumb border-radius-20">
-                                                <img src="<?= base_url('assets/img/testimonial/thumb-1-3.jpg'); ?>" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7 col-md-7">
-                                            <div class="it-testimonial-content">
-                                                <div class="it-testimonial-quote mb-35">
-                                                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10 0.0849609H5C3.67392 0.0849609 2.40215 0.611745 1.46447 1.54943C0.526784 2.48711 0 3.75888 0 5.08496L0 10.085C0 10.748 0.263392 11.3839 0.732233 11.8527C1.20107 12.3216 1.83696 12.585 2.5 12.585H9.8875C9.59091 14.3306 8.68685 15.9153 7.33504 17.059C5.98323 18.2026 4.27069 18.8317 2.5 18.835C2.16848 18.835 1.85054 18.9667 1.61612 19.2011C1.3817 19.4355 1.25 19.7534 1.25 20.085C1.25 20.4165 1.3817 20.7344 1.61612 20.9688C1.85054 21.2033 2.16848 21.335 2.5 21.335C5.15125 21.332 7.69306 20.2775 9.56778 18.4027C11.4425 16.528 12.497 13.9862 12.5 11.335V2.58496C12.5 1.92192 12.2366 1.28603 11.7678 0.817194C11.2989 0.348353 10.663 0.0849609 10 0.0849609Z" fill="#4C505B" />
-                                                        <path d="M27.5 0.0849609H22.5C21.1739 0.0849609 19.9021 0.611745 18.9645 1.54943C18.0268 2.48711 17.5 3.75888 17.5 5.08496V10.085C17.5 10.748 17.7634 11.3839 18.2322 11.8527C18.7011 12.3216 19.337 12.585 20 12.585H27.3875C27.0909 14.3306 26.1868 15.9153 24.835 17.059C23.4832 18.2026 21.7707 18.8317 20 18.835C19.6685 18.835 19.3505 18.9667 19.1161 19.2011C18.8817 19.4355 18.75 19.7534 18.75 20.085C18.75 20.4165 18.8817 20.7344 19.1161 20.9688C19.3505 21.2033 19.6685 21.335 20 21.335C22.6513 21.332 25.1931 20.2775 27.0678 18.4027C28.9425 16.528 29.997 13.9862 30 11.335V2.58496C30 1.92192 29.7366 1.28603 29.2678 0.817194C28.7989 0.348353 28.163 0.0849609 27.5 0.0849609Z" fill="#4C505B" />
-                                                    </svg>
-                                                </div>
-                                                <div class="it-testimonial-text">
-                                                    <h5 class="mb-30">Educeet transformed my learning journey! The platform is intuitive, the courses are top-notch, and the support is exceptional. I’ve gained real skills and confidence. Highly recommended for anyone serious about education.</h5>
-                                                </div>
-                                                <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">
-                                                    <div class="it-testimonial-avatar-info">
-                                                        <h5 class="it-testimonial-avatar-name">Christopher Story</h5>
-                                                        <span>Foundr & CEO UIPainter</span>
-                                                    </div>
-                                                    <img src="assets/img/testimonial/icon.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="it-testimonial-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5 col-md-5">
-                                            <div class="it-testimonial-thumb border-radius-20">
-                                                <img src="<?= base_url('assets/img/testimonial/thumb-1-2.jpg'); ?>" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7 col-md-7">
-                                            <div class="it-testimonial-content">
-                                                <div class="it-testimonial-quote mb-35">
-                                                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10 0.0849609H5C3.67392 0.0849609 2.40215 0.611745 1.46447 1.54943C0.526784 2.48711 0 3.75888 0 5.08496L0 10.085C0 10.748 0.263392 11.3839 0.732233 11.8527C1.20107 12.3216 1.83696 12.585 2.5 12.585H9.8875C9.59091 14.3306 8.68685 15.9153 7.33504 17.059C5.98323 18.2026 4.27069 18.8317 2.5 18.835C2.16848 18.835 1.85054 18.9667 1.61612 19.2011C1.3817 19.4355 1.25 19.7534 1.25 20.085C1.25 20.4165 1.3817 20.7344 1.61612 20.9688C1.85054 21.2033 2.16848 21.335 2.5 21.335C5.15125 21.332 7.69306 20.2775 9.56778 18.4027C11.4425 16.528 12.497 13.9862 12.5 11.335V2.58496C12.5 1.92192 12.2366 1.28603 11.7678 0.817194C11.2989 0.348353 10.663 0.0849609 10 0.0849609Z" fill="#4C505B" />
-                                                        <path d="M27.5 0.0849609H22.5C21.1739 0.0849609 19.9021 0.611745 18.9645 1.54943C18.0268 2.48711 17.5 3.75888 17.5 5.08496V10.085C17.5 10.748 17.7634 11.3839 18.2322 11.8527C18.7011 12.3216 19.337 12.585 20 12.585H27.3875C27.0909 14.3306 26.1868 15.9153 24.835 17.059C23.4832 18.2026 21.7707 18.8317 20 18.835C19.6685 18.835 19.3505 18.9667 19.1161 19.2011C18.8817 19.4355 18.75 19.7534 18.75 20.085C18.75 20.4165 18.8817 20.7344 19.1161 20.9688C19.3505 21.2033 19.6685 21.335 20 21.335C22.6513 21.332 25.1931 20.2775 27.0678 18.4027C28.9425 16.528 29.997 13.9862 30 11.335V2.58496C30 1.92192 29.7366 1.28603 29.2678 0.817194C28.7989 0.348353 28.163 0.0849609 27.5 0.0849609Z" fill="#4C505B" />
-                                                    </svg>
-                                                </div>
-                                                <div class="it-testimonial-text">
-                                                    <h5 class="mb-30">Educeet transformed my learning journey! The platform is intuitive, the courses are top-notch, and the support is exceptional. I’ve gained real skills and confidence. Highly recommended for anyone serious about education.</h5>
-                                                </div>
-                                                <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">
-                                                    <div class="it-testimonial-avatar-info">
-                                                        <h5 class="it-testimonial-avatar-name">Denise Germany</h5>
-                                                        <span>Foundr & CEO UIPainter</span>
-                                                    </div>
-                                                    <img src="assets/img/testimonial/icon.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="it-testimonial-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5 col-md-5">
-                                            <div class="it-testimonial-thumb border-radius-20">
-                                                <img src="<?= base_url('assets/img/testimonial/thumb-1-1.jpg'); ?>" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7 col-md-7">
-                                            <div class="it-testimonial-content">
-                                                <div class="it-testimonial-quote mb-35">
-                                                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10 0.0849609H5C3.67392 0.0849609 2.40215 0.611745 1.46447 1.54943C0.526784 2.48711 0 3.75888 0 5.08496L0 10.085C0 10.748 0.263392 11.3839 0.732233 11.8527C1.20107 12.3216 1.83696 12.585 2.5 12.585H9.8875C9.59091 14.3306 8.68685 15.9153 7.33504 17.059C5.98323 18.2026 4.27069 18.8317 2.5 18.835C2.16848 18.835 1.85054 18.9667 1.61612 19.2011C1.3817 19.4355 1.25 19.7534 1.25 20.085C1.25 20.4165 1.3817 20.7344 1.61612 20.9688C1.85054 21.2033 2.16848 21.335 2.5 21.335C5.15125 21.332 7.69306 20.2775 9.56778 18.4027C11.4425 16.528 12.497 13.9862 12.5 11.335V2.58496C12.5 1.92192 12.2366 1.28603 11.7678 0.817194C11.2989 0.348353 10.663 0.0849609 10 0.0849609Z" fill="#4C505B" />
-                                                        <path d="M27.5 0.0849609H22.5C21.1739 0.0849609 19.9021 0.611745 18.9645 1.54943C18.0268 2.48711 17.5 3.75888 17.5 5.08496V10.085C17.5 10.748 17.7634 11.3839 18.2322 11.8527C18.7011 12.3216 19.337 12.585 20 12.585H27.3875C27.0909 14.3306 26.1868 15.9153 24.835 17.059C23.4832 18.2026 21.7707 18.8317 20 18.835C19.6685 18.835 19.3505 18.9667 19.1161 19.2011C18.8817 19.4355 18.75 19.7534 18.75 20.085C18.75 20.4165 18.8817 20.7344 19.1161 20.9688C19.3505 21.2033 19.6685 21.335 20 21.335C22.6513 21.332 25.1931 20.2775 27.0678 18.4027C28.9425 16.528 29.997 13.9862 30 11.335V2.58496C30 1.92192 29.7366 1.28603 29.2678 0.817194C28.7989 0.348353 28.163 0.0849609 27.5 0.0849609Z" fill="#4C505B" />
-                                                    </svg>
-                                                </div>
-                                                <div class="it-testimonial-text">
-                                                    <h5 class="mb-30">Educeet transformed my learning journey! The platform is intuitive, the courses are top-notch, and the support is exceptional. I’ve gained real skills and confidence. Highly recommended for anyone serious about education.</h5>
-                                                </div>
-                                                <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">
-                                                    <div class="it-testimonial-avatar-info">
-                                                        <h5 class="it-testimonial-avatar-name">Michelle Logan</h5>
-                                                        <span>Foundr & CEO UIPainter</span>
-                                                    </div>
-                                                    <img src="assets/img/testimonial/icon.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="it-testimonial-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5 col-md-5">
-                                            <div class="it-testimonial-thumb border-radius-20">
-                                                <img src="assets/img/testimonial/thumb-1-3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7 col-md-7">
-                                            <div class="it-testimonial-content">
-                                                <div class="it-testimonial-quote mb-35">
-                                                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10 0.0849609H5C3.67392 0.0849609 2.40215 0.611745 1.46447 1.54943C0.526784 2.48711 0 3.75888 0 5.08496L0 10.085C0 10.748 0.263392 11.3839 0.732233 11.8527C1.20107 12.3216 1.83696 12.585 2.5 12.585H9.8875C9.59091 14.3306 8.68685 15.9153 7.33504 17.059C5.98323 18.2026 4.27069 18.8317 2.5 18.835C2.16848 18.835 1.85054 18.9667 1.61612 19.2011C1.3817 19.4355 1.25 19.7534 1.25 20.085C1.25 20.4165 1.3817 20.7344 1.61612 20.9688C1.85054 21.2033 2.16848 21.335 2.5 21.335C5.15125 21.332 7.69306 20.2775 9.56778 18.4027C11.4425 16.528 12.497 13.9862 12.5 11.335V2.58496C12.5 1.92192 12.2366 1.28603 11.7678 0.817194C11.2989 0.348353 10.663 0.0849609 10 0.0849609Z" fill="#4C505B" />
-                                                        <path d="M27.5 0.0849609H22.5C21.1739 0.0849609 19.9021 0.611745 18.9645 1.54943C18.0268 2.48711 17.5 3.75888 17.5 5.08496V10.085C17.5 10.748 17.7634 11.3839 18.2322 11.8527C18.7011 12.3216 19.337 12.585 20 12.585H27.3875C27.0909 14.3306 26.1868 15.9153 24.835 17.059C23.4832 18.2026 21.7707 18.8317 20 18.835C19.6685 18.835 19.3505 18.9667 19.1161 19.2011C18.8817 19.4355 18.75 19.7534 18.75 20.085C18.75 20.4165 18.8817 20.7344 19.1161 20.9688C19.3505 21.2033 19.6685 21.335 20 21.335C22.6513 21.332 25.1931 20.2775 27.0678 18.4027C28.9425 16.528 29.997 13.9862 30 11.335V2.58496C30 1.92192 29.7366 1.28603 29.2678 0.817194C28.7989 0.348353 28.163 0.0849609 27.5 0.0849609Z" fill="#4C505B" />
-                                                    </svg>
-                                                </div>
-                                                <div class="it-testimonial-text">
-                                                    <h5 class="mb-30">Educeet transformed my learning journey! The platform is intuitive, the courses are top-notch, and the support is exceptional. I’ve gained real skills and confidence. Highly recommended for anyone serious about education.</h5>
-                                                </div>
-                                                <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">
-                                                    <div class="it-testimonial-avatar-info">
-                                                        <h5 class="it-testimonial-avatar-name">Christopher Story</h5>
-                                                        <span>Foundr & CEO UIPainter</span>
-                                                    </div>
-                                                    <img src="assets/img/testimonial/icon.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="it-testimonial-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5 col-md-5">
-                                            <div class="it-testimonial-thumb border-radius-20">
-                                                <img src="assets/img/testimonial/thumb-1-4.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7 col-md-7">
-                                            <div class="it-testimonial-content">
-                                                <div class="it-testimonial-quote mb-35">
-                                                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10 0.0849609H5C3.67392 0.0849609 2.40215 0.611745 1.46447 1.54943C0.526784 2.48711 0 3.75888 0 5.08496L0 10.085C0 10.748 0.263392 11.3839 0.732233 11.8527C1.20107 12.3216 1.83696 12.585 2.5 12.585H9.8875C9.59091 14.3306 8.68685 15.9153 7.33504 17.059C5.98323 18.2026 4.27069 18.8317 2.5 18.835C2.16848 18.835 1.85054 18.9667 1.61612 19.2011C1.3817 19.4355 1.25 19.7534 1.25 20.085C1.25 20.4165 1.3817 20.7344 1.61612 20.9688C1.85054 21.2033 2.16848 21.335 2.5 21.335C5.15125 21.332 7.69306 20.2775 9.56778 18.4027C11.4425 16.528 12.497 13.9862 12.5 11.335V2.58496C12.5 1.92192 12.2366 1.28603 11.7678 0.817194C11.2989 0.348353 10.663 0.0849609 10 0.0849609Z" fill="#4C505B" />
-                                                        <path d="M27.5 0.0849609H22.5C21.1739 0.0849609 19.9021 0.611745 18.9645 1.54943C18.0268 2.48711 17.5 3.75888 17.5 5.08496V10.085C17.5 10.748 17.7634 11.3839 18.2322 11.8527C18.7011 12.3216 19.337 12.585 20 12.585H27.3875C27.0909 14.3306 26.1868 15.9153 24.835 17.059C23.4832 18.2026 21.7707 18.8317 20 18.835C19.6685 18.835 19.3505 18.9667 19.1161 19.2011C18.8817 19.4355 18.75 19.7534 18.75 20.085C18.75 20.4165 18.8817 20.7344 19.1161 20.9688C19.3505 21.2033 19.6685 21.335 20 21.335C22.6513 21.332 25.1931 20.2775 27.0678 18.4027C28.9425 16.528 29.997 13.9862 30 11.335V2.58496C30 1.92192 29.7366 1.28603 29.2678 0.817194C28.7989 0.348353 28.163 0.0849609 27.5 0.0849609Z" fill="#4C505B" />
-                                                    </svg>
-                                                </div>
-                                                <div class="it-testimonial-text">
-                                                    <h5 class="mb-30">Educeet transformed my learning journey! The platform is intuitive, the courses are top-notch, and the support is exceptional. I’ve gained real skills and confidence. Highly recommended for anyone serious about education.</h5>
-                                                </div>
-                                                <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">
-                                                    <div class="it-testimonial-avatar-info">
-                                                        <h5 class="it-testimonial-avatar-name">Douglas Taylor</h5>
-                                                        <span>Foundr & CEO UIPainter</span>
-                                                    </div>
-                                                    <img src="assets/img/testimonial/icon.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
+
                         </div>
                     </div>
                     <div class="it-testimonial-arrow-wrap">
