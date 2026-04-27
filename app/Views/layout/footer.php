@@ -40,7 +40,7 @@
                                 <ul>
                                     <li><a href="#">Sejarah</a></li>
                                     <li><a href="#">Visi Misi</a></li>
-                                    <li><a href="#">Strukitur Organisasi</a></li>
+                                    <li><a href="#">Struktur Organisasi</a></li>
                                     <li><a href="#">Pendidik</a></li>
                                     <li><a href="#">Tenaga Kependidikan</a></li>
                                 </ul>
