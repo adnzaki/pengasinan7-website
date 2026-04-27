@@ -71,7 +71,7 @@
                                                 <div class="it-megamenu-item">
                                                     <h4 class="it-megamenu-title">Tentang Sekolah</h4>
                                                     <ul>
-                                                        <li><a href="about-us-v1.html">Sejarah</a></li>
+                                                        <li><a href="<?= base_url('/profil/sejarah-sekolah') ?>">Sejarah</a></li>
                                                         <li><a href="about-us-v4.html">Visi Misi</a></li>
                                                         <li><a href="about-us-v5.html">Struktur Organisasi</a></li>
                                                         <li><a href="about-us-v3.html">Pendidik</a></li>
