@@ -2,8 +2,17 @@
 
 namespace App\Controllers;
 
+use App\Models\StaticSiteModel;
+
 class Profile extends BaseController
 {
+    protected $staticSiteModel;
+
+    public function __construct()
+    {
+        $this->staticSiteModel = new StaticSiteModel();
+    }
+
     public function history()
     {
         $schoolInfo = $this->schoolInfo();
@@ -41,12 +50,35 @@ class Profile extends BaseController
         $data = [
             'schoolInfo'    => $schoolInfo,
             'title'         => 'Sejarah Sekolah',
+            'titleImage'    => 'gedung-sekolah.webp',
             'headmasters'   => $headmasters,
         ];
 
+            $views = [
+                view('profile/title', $data),
+                view('profile/history/content', $data),
+            ];
+
+            $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
+
+    public function rooms()
+    {
+        $schoolInfo = $this->schoolInfo();
+        $classRooms = $this->staticSiteModel->classRooms();
+
+        $data = [
+            'schoolInfo'    => $schoolInfo,
+            'title'         => 'Ruang Kelas',
+            'titleImage'    => 'ruang-perpus.webp',
+            'classRooms'    => $classRooms,
+        ];
+
         $views = [
-            view('profile/history/title', $data),
-            view('profile/history/content', $data),
+            view('profile/title', $data),
+            view('profile/rooms/content', $data),
         ];
 
         $data['contents'] = implode('', $views);

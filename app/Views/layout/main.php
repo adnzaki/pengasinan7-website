@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/magnific-popup.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/nice-select.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/custom-animation.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/glightbox/css/glightbox.min.css'); ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
 
     <!-- Theme / Main CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/spacing.css'); ?>">
@@ -65,7 +67,7 @@
         <?= $contents ?>
     </main>
 
-       
+
 
     <?= view('layout/footer') ?>
 

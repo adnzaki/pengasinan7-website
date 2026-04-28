@@ -15,11 +15,23 @@
   border-right: solid 1px #a8a8a8b4;
 }
 
+.fancy-thumbnail {
+  width: 200px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 @media (max-width: 576px) {
   .header-logo {
     max-height: 45px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .fancy-thumbnail {
+    width: 150px !important;
+    height: 100px !important;
   }
 
   .about-thumbnail {

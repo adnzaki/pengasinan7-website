@@ -2,6 +2,32 @@
 
 class StaticSiteModel
 {
+    public function classRooms()
+    {
+        return [
+            [
+                'id'    => 1,
+                'name'  => 'Ruang Perpustakaan / TKA',
+                'image' => 'room-1.webp',
+            ],
+            [
+                'id'    => 2,
+                'name'  => 'Ruang Kelas 1 A / 2 A',
+                'image' => 'room-2.webp',
+            ],
+            [
+                'id'    => 3,
+                'name'  => 'Ruang Kelas 1 B / 2 B',
+                'image' => 'room-3.webp',
+            ],
+            [
+                'id'    => 4,
+                'name'  => 'Ruang Kelas 6 A',
+                'image' => 'room-4.webp',
+            ],
+        ];
+    }
+
     public function testimonials()
     {
         return [

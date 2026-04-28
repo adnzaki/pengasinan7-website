@@ -84,7 +84,7 @@
                                                     <h4 class="it-megamenu-title">Fasilitas</h4>
                                                     <ul>
                                                         <li><a href="career.html">Gedung</a></li>
-                                                        <li><a href="career-details.html">Ruang Kelas</a></li>
+                                                        <li><a href="<?= base_url('/profil/ruang-kelas') ?>">Ruang Kelas</a></li>
                                                         <li><a href="event-grid.html">Lapangan</a></li>
                                                         <li><a href="event-list.html">Parkir</a></li>
                                                         <li><a href="event-details.html">Media Pembelajaran</a></li>
