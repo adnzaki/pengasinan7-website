@@ -25,13 +25,13 @@ class Home extends BaseController
             ],
             [
                 'title'     => 'Tempat Terbaik Untuk Tumbuh dan Belajar',
-                'subtitle'  => 'Di sini, setiap anak diberi ruang untuk berkembang, mengeksplorasi bakat, dan meraih cita-cita dengan percaya diri.',
+                'subtitle'  => 'Di sini, setiap anak diberi ruang untuk berkembang, mengeksplorasi bakat, dan meraih cita-cita dengan percaya diri. Memastikan pengalaman belajar yang menyenangkan.',
                 'strike'    => 'Bermimpi',
                 'image'     => 'sdn-hero-2',
             ],
             [
-                'title'     => 'Membangun Pondasi Generasi Cemerlang',
-                'subtitle'  => 'Pendidikan dasar yang kuat adalah kunci masa depan. Kami berkomitmen memberikan pengalaman belajar yang menyenangkan dan bermakna.',
+                'title'     => 'Membangun Karakter Unggul Sejak Dini',
+                'subtitle'  => 'Pendidikan dasar yang kuat adalah kunci masa depan. Kami berkomitmen untuk membentuk karakter unggul melalui pembelajaran yang menyenangkan dan mendidik.',
                 'strike'    => 'Cemerlang',
                 'image'     => 'sdn-hero-3',
             ],

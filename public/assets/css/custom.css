@@ -22,6 +22,14 @@
   border-radius: 10px;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+  .it-header-ptb {
+    padding: 3px 0 !important;
+  }
+}
+
 @media (max-width: 576px) {
   .header-logo {
     max-height: 45px;
