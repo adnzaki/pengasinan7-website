@@ -21,7 +21,10 @@
                 </div>
                 <div class="itoffcanvas__info-address">
                     <span>Email</span>
-                    <a href="maito:<?= $schoolInfo['email'] ?>"><?= $schoolInfo['email'] ?></a>
+                    <?php
+                    $splitEmail = explode('@', $schoolInfo['email']);
+                    ?>
+                    <a href="maito:<?= $schoolInfo['email'] ?>"><?= $splitEmail[0] ?> @<?= $splitEmail[1] ?></a>
                 </div>
             </div>
 
@@ -31,8 +34,7 @@
                 </div>
                 <div class="itoffcanvas__info-address">
                     <span>Location</span>
-                    <a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank">Riverside 255,
-                        San Francisco, USA </a>
+                    <a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank"><?= $schoolInfo['address'] ?> </a>
                 </div>
             </div>
         </div>
