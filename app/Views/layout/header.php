@@ -60,7 +60,7 @@
                         <nav class="it-menu-content">
                             <ul>
                                 <li class="p-static">
-                                    <a href="index.html">Home</a>
+                                    <a href="<?= base_url() ?>">Home</a>
 
                                 </li>
                                 <li class="has-dropdown p-static">
