@@ -56,7 +56,9 @@
                                     <ul>
                                         <!-- <li><span>Phone:</span><a href="tel:+91123456789">(+91) 123-456-789</a></li> -->
                                         <li><span>Email:</span><a href="mailto:sdnpengasinantujuh@gmail.com">sdnpengasinantujuh@gmail.com</a></li>
-                                        <li><span>Lokasi:</span><a target="_blank" href="https://maps.app.goo.gl/RU9DhzLN5WLdm4bbA">Rawalumbu, Kota Bekasi</a></li>
+                                        <li><span>Alamat:</span><a target="_blank" href="<?= $schoolInfo['maps'] ?>"><?= $schoolInfo['address'] ?></a></li>
+                                        <li><span>Kec, Kab/Kota:</span><a target="_blank" href="<?= $schoolInfo['maps'] ?>"><?= $schoolInfo['city'] ?></a></li>
+
                                     </ul>
                                 </div>
                                 <div class="it-footer-widget-social">

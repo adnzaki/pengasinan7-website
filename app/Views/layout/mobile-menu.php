@@ -33,8 +33,8 @@
                     <a href="#"><i class="fas fa-map-marker-alt"></i></a>
                 </div>
                 <div class="itoffcanvas__info-address">
-                    <span>Location</span>
-                    <a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank"><?= $schoolInfo['address'] ?> </a>
+                    <span>Lokasi</span>
+                    <a href="<?= $schoolInfo['maps'] ?>" target="_blank"><?= $schoolInfo['address'] ?> <br> <?= $schoolInfo['city'] ?> </a>
                 </div>
             </div>
         </div>
