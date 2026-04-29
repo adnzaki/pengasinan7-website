@@ -73,7 +73,7 @@
                                                     <ul>
                                                         <li><a href="<?= base_url('/profil/sejarah-sekolah') ?>">Sejarah</a></li>
                                                         <li><a href="about-us-v4.html">Visi Misi</a></li>
-                                                        <li><a href="about-us-v5.html">Struktur Organisasi</a></li>
+                                                        <li><a href="<?= base_url('/profil/struktur-organisasi') ?>">Struktur Organisasi</a></li>
                                                         <li><a href="about-us-v3.html">Pendidik</a></li>
                                                         <li><a href="about-us-v2.html">Tenaga Kependidikan</a></li>
                                                     </ul>

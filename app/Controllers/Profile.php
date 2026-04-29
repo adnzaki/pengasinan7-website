@@ -85,4 +85,24 @@ class Profile extends BaseController
 
         return view('layout/main', $data);
     }
+
+    public function organizationStructure()
+    {
+        $schoolInfo = $this->schoolInfo();
+
+        $data = [
+            'schoolInfo'    => $schoolInfo,
+            'title'         => 'Struktur Organisasi',
+            'titleImage'    => 'organization/organisasi.webp',
+        ];
+
+        $views = [
+            view('profile/title', $data),
+            view('profile/organization', $data),
+        ];
+
+        $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
 }
