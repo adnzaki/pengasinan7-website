@@ -85,8 +85,6 @@
                                                     <ul>
                                                         <li><a href="career.html">Gedung</a></li>
                                                         <li><a href="<?= base_url('/profil/ruang-kelas') ?>">Ruang Kelas</a></li>
-                                                        <li><a href="event-grid.html">Lapangan</a></li>
-                                                        <li><a href="event-list.html">Parkir</a></li>
                                                         <li><a href="event-details.html">Media Pembelajaran</a></li>
                                                     </ul>
                                                 </div>
@@ -106,7 +104,6 @@
                                                     <ul>
                                                         <li><a href="courses-v1.html">Belajar Mengajar</a></li>
                                                         <li><a href="courses-v2.html">Ekstrakurikuler</a></li>
-                                                        <li><a href="courses-v3.html">Asesmen Nasional</a></li>
                                                         <li><a href="courses-v4.html">Test Kemampuan Akademik</a></li>
                                                     </ul>
                                                 </div>
