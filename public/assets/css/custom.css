@@ -22,6 +22,10 @@
   border-radius: 10px;
 }
 
+.postbox-list ul li span.mission {
+  font-family: var(--it-ff-spartan-medium);
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {

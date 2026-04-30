@@ -72,10 +72,10 @@
                                                     <h4 class="it-megamenu-title">Tentang Sekolah</h4>
                                                     <ul>
                                                         <li><a href="<?= base_url('/profil/sejarah-sekolah') ?>">Sejarah</a></li>
-                                                        <li><a href="about-us-v4.html">Visi Misi</a></li>
+                                                        <li><a href="<?= base_url('/profil/visi-misi') ?>">Visi Misi</a></li>
                                                         <li><a href="<?= base_url('/profil/struktur-organisasi') ?>">Struktur Organisasi</a></li>
-                                                        <li><a href="about-us-v3.html">Pendidik</a></li>
-                                                        <li><a href="about-us-v2.html">Tenaga Kependidikan</a></li>
+                                                        <li><a href="<?= base_url('/profil/pendidik') ?>">Pendidik</a></li>
+                                                        <li><a href="<?= base_url('/profil/tenaga-kependidikan') ?>">Tenaga Kependidikan</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -83,9 +83,9 @@
                                                 <div class="it-megamenu-item">
                                                     <h4 class="it-megamenu-title">Fasilitas</h4>
                                                     <ul>
-                                                        <li><a href="career.html">Gedung</a></li>
+                                                        <li><a href="<?= base_url('/profil/gedung') ?>">Gedung</a></li>
                                                         <li><a href="<?= base_url('/profil/ruang-kelas') ?>">Ruang Kelas</a></li>
-                                                        <li><a href="event-details.html">Media Pembelajaran</a></li>
+                                                        <li><a href="<?= base_url('/profil/media-pembelajaran') ?>">Media Pembelajaran</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

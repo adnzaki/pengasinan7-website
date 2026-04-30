@@ -64,6 +64,36 @@ class Profile extends BaseController
         return view('layout/main', $data);
     }
 
+    public function vision()
+    {
+        $schoolInfo = $this->schoolInfo();
+
+        $missions = [
+            "Meningkatkan kecerdasan, keimanan, dan ketaqwaan yang bernuansa Insan.",
+            "Meningkatkan kualitas pembelajaran secara profesional, unggul dan tangguh.",
+            "Meningkatkan prestasi akademik dan berkompetisi dalam mutu lulusan.",
+            "Melaksanakan pembiasaan Beragama, berbangsa dan Bernegara dalam menumbuhkan Insan yang berkarakter.",
+            "Meningkatkan Prestasi Non Akademik melalui kegiatan ekstrakurikuler.",
+            "Meningkatkan disiplin bagi masyarakat sekolah sebagai bekal dalam kehidupan bermasyarakat."
+        ];
+
+        $data = [
+            'schoolInfo'    => $schoolInfo,
+            'title'         => 'Visi & Misi',
+            'titleImage'    => 'visi-misi.webp',
+            'missions'      => $missions,
+        ];
+
+        $views = [
+            view('profile/title', $data),
+            view('profile/vision', $data),
+        ];
+
+        $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
+
     public function rooms()
     {
         $schoolInfo = $this->schoolInfo();
