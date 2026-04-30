@@ -6,14 +6,14 @@ use App\Models\StaticSiteModel;
 
 class Profile extends BaseController
 {
-    protected $staticSiteModel;
+    protected StaticSiteModel $staticSiteModel;
 
     public function __construct()
     {
         $this->staticSiteModel = new StaticSiteModel();
     }
 
-    public function history()
+    public function aboutSchool()
     {
         $schoolInfo = $this->schoolInfo();
         $headmasters = [
@@ -47,26 +47,24 @@ class Profile extends BaseController
             ]
         ];
 
-        $data = [
-            'schoolInfo'    => $schoolInfo,
-            'title'         => 'Sejarah Sekolah',
-            'titleImage'    => 'gedung-sekolah.webp',
-            'headmasters'   => $headmasters,
+        $summary = [
+            [
+                'title' => 'Tahun Berdiri',
+                'value' => '1991'
+            ],
+            [
+                'title' => 'Luas Tanah',
+                'value' => '1850 m2'
+            ],
+            [
+                'title' => 'Peserta Didik',
+                'value' => '468'
+            ],
+            [
+                'title' => 'Pegawai',
+                'value' => '20'
+            ],
         ];
-
-            $views = [
-                view('profile/title', $data),
-                view('profile/history/content', $data),
-            ];
-
-            $data['contents'] = implode('', $views);
-
-        return view('layout/main', $data);
-    }
-
-    public function vision()
-    {
-        $schoolInfo = $this->schoolInfo();
 
         $missions = [
             "Meningkatkan kecerdasan, keimanan, dan ketaqwaan yang bernuansa Insan.",
@@ -77,16 +75,24 @@ class Profile extends BaseController
             "Meningkatkan disiplin bagi masyarakat sekolah sebagai bekal dalam kehidupan bermasyarakat."
         ];
 
+        $schoolNames = [
+            'SDN Bumi Bekasi Baru I',
+            'SDN Pengasinan VII (nama yang digunakan hingga sekarang)',
+        ];
+
         $data = [
             'schoolInfo'    => $schoolInfo,
-            'title'         => 'Visi & Misi',
-            'titleImage'    => 'visi-misi.webp',
+            'title'         => 'Profil Sekolah',
+            'titleImage'    => 'gedung-sekolah.webp',
+            'headmasters'   => $headmasters,
+            'summary'       => $summary,
             'missions'      => $missions,
+            'schoolNames'   => $schoolNames,
         ];
 
         $views = [
             view('profile/title', $data),
-            view('profile/vision', $data),
+            view('profile/about/history', $data),
         ];
 
         $data['contents'] = implode('', $views);
@@ -109,26 +115,6 @@ class Profile extends BaseController
         $views = [
             view('profile/title', $data),
             view('profile/rooms/content', $data),
-        ];
-
-        $data['contents'] = implode('', $views);
-
-        return view('layout/main', $data);
-    }
-
-    public function organizationStructure()
-    {
-        $schoolInfo = $this->schoolInfo();
-
-        $data = [
-            'schoolInfo'    => $schoolInfo,
-            'title'         => 'Struktur Organisasi',
-            'titleImage'    => 'organization/organisasi.webp',
-        ];
-
-        $views = [
-            view('profile/title', $data),
-            view('profile/organization', $data),
         ];
 
         $data['contents'] = implode('', $views);

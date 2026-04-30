@@ -1,3 +1,15 @@
+:root {
+  --p7-primary: #007bff;
+  --p7-secondary: #6c757d;
+  --p7-success: #28a745;
+  --p7-danger: #dc3545;
+  --p7-warning: #ffc107;
+  --p7-info: #17a2b8;
+  --p7-light: #f8f9fa;
+  --p7-dark: #343a40;
+  --p7-light-grey: #f8f8f8;
+}
+
 .header-logo {
   max-width: 70px;
   padding: 5px;
@@ -23,7 +35,12 @@
 }
 
 .postbox-list ul li span.mission {
-  font-family: var(--it-ff-spartan-medium);
+  font-family: var(--it-ff-spartan-regular);
+  font-size: 14px;
+}
+
+.postbox-list ul li span.history {
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),

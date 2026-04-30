@@ -71,9 +71,7 @@
                                                 <div class="it-megamenu-item">
                                                     <h4 class="it-megamenu-title">Tentang Sekolah</h4>
                                                     <ul>
-                                                        <li><a href="<?= base_url('/profil/sejarah-sekolah') ?>">Sejarah</a></li>
-                                                        <li><a href="<?= base_url('/profil/visi-misi') ?>">Visi Misi</a></li>
-                                                        <li><a href="<?= base_url('/profil/struktur-organisasi') ?>">Struktur Organisasi</a></li>
+                                                        <li><a href="<?= base_url('/profil/tentang-sekolah') ?>">Profil Sekolah</a></li>
                                                         <li><a href="<?= base_url('/profil/pendidik') ?>">Pendidik</a></li>
                                                         <li><a href="<?= base_url('/profil/tenaga-kependidikan') ?>">Tenaga Kependidikan</a></li>
                                                     </ul>

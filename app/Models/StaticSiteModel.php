@@ -2,6 +2,12 @@
 
 class StaticSiteModel
 {
+
+    public function teachers()
+    {
+
+    }
+    
     public function classRooms()
     {
         return [
