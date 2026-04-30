@@ -43,6 +43,10 @@
   font-size: 14px;
 }
 
+.organization-btn {
+  display: none;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {
@@ -56,6 +60,14 @@ only screen and (min-width: 768px) and (max-width: 991px),
     max-height: 45px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .organization {
+    display: none;
+  }
+
+  .organization-btn {
+    display: block;
   }
 
   .fancy-thumbnail {

@@ -1,8 +1,11 @@
 <div class="row">
     <div class="col-12">
-        <div class="it-choose-2-section-title-box text-center mb-60">
-            <!-- <span class="it-section-subtitle style-2">Struktur Organisasi</span> -->
-            <div class="postbox-details-wrapper it-career-details-area">
+        <div class="it-choose-2-section-title-box text-center mb-60 ">
+            <a class="organization-btn" href="<?= base_url('assets/img/about/organization/struktur-2.png') ?>" data-fancybox="gallery" data-caption="Struktur Organisasi">
+                <img class="mb-5" src="<?= base_url('assets/img/about/organization/struktur-2.png') ?>" alt="Struktur Organisasi" />
+            </a>
+            <span class="it-section-subtitle style-2 organization-btn">Klik gambar untuk memperbesar</span>
+            <div class="postbox-details-wrapper it-career-details-area organization">
                 <div class="postbox-thumb-box mb-60">
                     <!-- <div class="postbox-main-thumb border-radius-20 mb-35">
                             <img class="w-100" src="<? //= base_url() 
