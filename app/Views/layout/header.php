@@ -82,39 +82,31 @@
                                                     <h4 class="it-megamenu-title">Fasilitas</h4>
                                                     <ul>
                                                         <li><a href="<?= base_url('/profil/prasarana') ?>">Prasarana</a></li>
-                                                        <li><a href="<?= base_url('/profil/media-pembelajaran') ?>">Media Pembelajaran</a></li>
+                                                        <li><a href="<?= base_url('/profil/media-pembelajaran') ?>">Sarana Pembelajaran</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="has-dropdown p-static">
-                                    <a href="courses-v1.html">Program</a>
-                                    <div class="it-submenu submenu it-megamenu-wrap">
+                                <li class="has-dropdown">
+                                    <a href="courses-v1.html">Kegiatan</a>
+                                    <ul class="it-submenu submenu">
+                                        <li><a href="courses-v2.html">Ekstrakurikuler</a></li>
+                                        <!-- <li><a href="courses-v4.html">Test Kemampuan Akademik</a></li> -->
+                                        <li><a href="courses-v5.html">Perlombaan</a></li>
+                                    </ul>
+                                    <!-- <div class="it-submenu submenu it-megamenu-wrap">
                                         <div class="row gx-50">
                                             <div class="col-xl-6">
                                                 <div class="it-megamenu-item">
                                                     <h4 class="it-megamenu-title">Kegiatan</h4>
-                                                    <ul>
-                                                        <li><a href="courses-v1.html">Belajar Mengajar</a></li>
-                                                        <li><a href="courses-v2.html">Ekstrakurikuler</a></li>
-                                                        <li><a href="courses-v4.html">Test Kemampuan Akademik</a></li>
-                                                    </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
-                                                <div class="it-megamenu-item">
-                                                    <h4 class="it-megamenu-title">Kesiswaan</h4>
-                                                    <ul>
-                                                        <li><a href="courses-v5.html">Program Indonesia Pintar</a></li>
-                                                        <li><a href="courses-v5.html">Perlombaan</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            
 
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </li>
                                 <li class="has-dropdown">
                                     <a href="blog-grid.html">Berita</a>
