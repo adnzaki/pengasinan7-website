@@ -54,4 +54,30 @@ class Employee extends BaseController
 
         return view('layout/main', $data);
     }
+
+    public function detail(string $slug)
+    {
+        $schoolInfo = $this->schoolInfo();
+        $employee = $this->employeeModel->where('slug', $slug)->first();
+
+        if (!$employee) {
+            //throw new \CodeIgniter\Exceptions\PageNotFoundException("PTK dengan slug '$slug' tidak ditemukan.");
+            $error = new \App\Controllers\Error;
+            return $error->index();
+        }
+
+        $data = [
+            'title'         => $employee['name'],
+            'schoolInfo'    => $schoolInfo,
+            'employee'      => $employee
+        ];
+
+        $views = [
+            view('profile/employee/detail', $data),
+        ];
+
+        $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
 }

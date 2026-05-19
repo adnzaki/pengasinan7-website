@@ -11,7 +11,7 @@
                     </div>
                     <div class="it-team-content">
                         <h4 class="it-team-title" style="font-size: <?= $employee['photo'] === 'insan.webp' ? '14' : '15' ?>px;">
-                            <a class="border-line" href="team-details.html"><?= $employee['name']; ?></a>
+                            <a class="border-line" href="<?= base_url('profil/ptk/' . $employee['slug']); ?>"><?= $employee['name']; ?></a>
                         </h4>
                         <span><?= $employee['position']; ?></span>
                         <div class="it-course-meta d-flex justify-content-between">
