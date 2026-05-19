@@ -3,23 +3,65 @@
 class StaticSiteModel
 {
 
-    public function teachers()
+    public function facilitiesStats()
     {
+        return [
+            [
+                'title' => 'Luas Lahan',
+                'value' => '1850 m2',
+                'icon'  => 'fa-light fa-school'
+            ],
+            [
+                'title' => 'Ruang Kelas',
+                'icon'  => 'fa-light fa-building',
+                'value' => 13
+            ],
+            [
+                'title' => 'Ruang Perpustakaan',
+                'icon'  => 'fa-light fa-books',
+                'value' => 1
+            ],
+            [
+                'title' => 'Tempat Cuci Tangan',
+                'icon'  => 'fa-light fa-hand-holding-droplet',
+                'value' => 8
+            ],
+        ];
+    }
 
+    public function facilitiesHighlight()
+    {
+        return [
+            [
+                'name'          => 'Ruang Kelas',
+                'icon'          => 'building',
+                'description'   => 'Ruang kelas nyaman dengan pencahayaan baik dan tata letak rapi, mendukung konsentrasi siswa serta suasana belajar yang kondusif.',  
+            ],
+            [
+                'name'          => 'Perpustakaan',
+                'icon'          => 'books',
+                'description'   => 'Ruang perpustakaan yang dilengkapi perangkat multimedia menyediakan koleksi buku dan fasilitas digital sebagai pusat literasi dan pengetahuan.',
+            ],
+            [
+                'name'          => 'Lapangan Olahraga',
+                'icon'          => 'person-running',
+                'description'   => 'Lapangan olahraga menjadi sarana pengembangan jasmani sekaligus karakter, menumbuhkan semangat sportivitas dan kerja sama.',
+            ],
+        ];
     }
     
-    public function classRooms()
+    public function facilities()
     {
         return [
             [
                 'id'    => 1,
-                'name'  => 'Ruang Perpustakaan / TKA',
+                'name'  => 'Ruang Perpustakaan / Multimedia',
                 'image' => 'room-1.webp',
             ],
             [
                 'id'    => 2,
-                'name'  => 'Ruang Kelas 1 A / 2 A',
-                'image' => 'room-2.webp',
+                'name'  => 'Lapangan Olahraga',
+                'image' => 'lapangan.webp',
             ],
             [
                 'id'    => 3,
@@ -30,6 +72,26 @@ class StaticSiteModel
                 'id'    => 4,
                 'name'  => 'Ruang Kelas 6 A',
                 'image' => 'room-4.webp',
+            ],
+            [
+                'id'    => 5,
+                'name'  => 'Ruang Perpustakaan / Multimedia',
+                'image' => 'perpus-2.webp',
+            ],
+            [
+                'id'    => 6,
+                'name'  => 'Halaman Parkir Sepeda',
+                'image' => 'parkir.webp',
+            ],
+            [
+                'id'    => 7,
+                'name'  => 'Musholla',
+                'image' => 'musholla.webp',
+            ],
+            [
+                'id'    => 8,
+                'name'  => 'Tempat Cuci Tangan',
+                'image' => 'wastafel.webp',
             ],
         ];
     }

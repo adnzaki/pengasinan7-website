@@ -100,10 +100,39 @@ class Profile extends BaseController
         return view('layout/main', $data);
     }
 
+    public function facilities()
+    {
+        $schoolInfo = $this->schoolInfo();
+        $classRooms = $this->staticSiteModel->facilities();
+        $highlights = $this->staticSiteModel->facilitiesHighlight();
+        $stats = $this->staticSiteModel->facilitiesStats();
+
+        $data = [
+            'schoolInfo'    => $schoolInfo,
+            'title'         => 'Prasarana',
+            'titleImage'    => 'facilities/gedung.webp',
+            'classRooms'    => $classRooms,
+            'highlights'    => $highlights,
+            'stats'         => $stats,
+        ];
+
+        $views = [
+            view('profile/title', $data),
+            // view('profile/facilities/stats', $data),
+            view('profile/facilities/description', $data),
+            view('profile/facilities/highlights', $data),
+            view('profile/facilities/gallery', $data),
+        ];
+
+        $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
+
     public function rooms()
     {
         $schoolInfo = $this->schoolInfo();
-        $classRooms = $this->staticSiteModel->classRooms();
+        $classRooms = $this->staticSiteModel->facilities();
 
         $data = [
             'schoolInfo'    => $schoolInfo,

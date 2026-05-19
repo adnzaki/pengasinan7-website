@@ -12,4 +12,5 @@ $routes->group('profil', function (RouteCollection $routes) {
     $routes->get('pendidik', 'Employee::teachers');
     $routes->get('tenaga-kependidikan', 'Employee::staff');
     $routes->get('ptk/(:any)', 'Employee::detail/$1');
+    $routes->get('prasarana', 'Profile::facilities');
 });

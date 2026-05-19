@@ -81,14 +81,11 @@
                                                 <div class="it-megamenu-item">
                                                     <h4 class="it-megamenu-title">Fasilitas</h4>
                                                     <ul>
-                                                        <li><a href="<?= base_url('/profil/gedung') ?>">Gedung</a></li>
-                                                        <li><a href="<?= base_url('/profil/ruang-kelas') ?>">Ruang Kelas</a></li>
+                                                        <li><a href="<?= base_url('/profil/prasarana') ?>">Prasarana</a></li>
                                                         <li><a href="<?= base_url('/profil/media-pembelajaran') ?>">Media Pembelajaran</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                     </div>
                                 </li>

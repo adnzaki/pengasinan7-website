@@ -34,6 +34,13 @@
   border-radius: 10px;
 }
 
+.fancy-thumbnail-full {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+  border-radius: 10px !important;
+}
+
 .postbox-list ul li span.mission {
   font-family: var(--it-ff-spartan-regular);
   font-size: 14px;
