@@ -87,7 +87,9 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="it-copyright-left style-2 text-center">
-                            <p class="mb-0">Copyright © <?= date('Y'); ?> <a href="#">SDN Pengasinan VII</a> All Rights Reserved</p>
+                            <p class="mb-0">Copyright © <?= date('Y'); ?> <a href="#">SDN Pengasinan VII</a> - All Rights Reserved<br />
+                                <span style="font-family: Consolas; font-style: italic;">Handcrafted with <i class="fa fa-heart"></i> by <a href="#">Adnan Zaki</a></span>
+                            </p>
                         </div>
                     </div>
                 </div>

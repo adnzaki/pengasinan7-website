@@ -1,5 +1,5 @@
 <section class="it-choose-2-area z-index-1 pt-130 pb-95">
-    <img class="it-choose-2-shape-1" src="assets/img/shape/choose-5-1.png" alt="">
+    <img class="it-choose-2-shape-1" src="<?= base_url() ?>assets/img/shape/choose-5-1.png" alt="">
     <div class="container">
         <div class="row">
             <div class="col-12">

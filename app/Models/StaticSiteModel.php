@@ -2,6 +2,21 @@
 
 class StaticSiteModel
 {
+    public function learningTools()
+    {
+        return [
+            [
+                'title'         => 'Buku Teks Pelajaran',
+                'description'   => 'Sumber utama belajar di sekolah yang mengikuti kurikulum dan membantu siswa memahami materi.',
+                'image'         => 'textbook.webp',
+            ],
+            [
+                'title'         => 'Chromebook',
+                'description'   => 'Laptop berbasis Chrome OS untuk pembelajaran digital, memudahkan akses ke aplikasi dan sumber belajar online',
+                'image'         => 'chromebook.webp',
+            ],
+        ];
+    }
 
     public function facilitiesStats()
     {

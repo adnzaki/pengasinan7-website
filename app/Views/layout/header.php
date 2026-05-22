@@ -82,7 +82,7 @@
                                                     <h4 class="it-megamenu-title">Fasilitas</h4>
                                                     <ul>
                                                         <li><a href="<?= base_url('/profil/prasarana') ?>">Prasarana</a></li>
-                                                        <li><a href="<?= base_url('/profil/media-pembelajaran') ?>">Sarana Pembelajaran</a></li>
+                                                        <li><a href="<?= base_url('/profil/sarana-pembelajaran') ?>">Sarana Pembelajaran</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

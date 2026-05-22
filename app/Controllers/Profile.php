@@ -129,6 +129,28 @@ class Profile extends BaseController
         return view('layout/main', $data);
     }
 
+    public function learningTools()
+    {
+        $schoolInfo = $this->schoolInfo();
+        $learningTools = $this->staticSiteModel->learningTools();
+
+        $data = [
+            'schoolInfo'    => $schoolInfo,
+            'title'         => 'Sarana Pembelajaran',
+            'titleImage'    => 'tools/sarana.webp',
+            'learningTools' => $learningTools,
+        ];
+
+        $views = [
+            view('profile/title', $data),
+            view('profile/learning-tools/content', $data),
+        ];
+
+        $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
+
     public function rooms()
     {
         $schoolInfo = $this->schoolInfo();
