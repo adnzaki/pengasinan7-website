@@ -14,4 +14,5 @@ $routes->group('profil', function (RouteCollection $routes) {
     $routes->get('ptk/(:any)', 'Employee::detail/$1');
     $routes->get('prasarana', 'Profile::facilities');
     $routes->get('sarana-pembelajaran', 'Profile::learningTools');
+    $routes->get('sambutan-kepala-sekolah', 'Profile::welcomeMessage');
 });

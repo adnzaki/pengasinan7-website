@@ -13,6 +13,27 @@ class Profile extends BaseController
         $this->staticSiteModel = new StaticSiteModel();
     }
 
+    public function welcomeMessage()
+    {
+        $employee = new \App\Models\EmployeeModel();
+        $schoolInfo = $this->schoolInfo();
+        $headmaster = $employee->where('type', 'kepsek')->first();
+
+        $data = [
+            'title'         => 'Sambutan Kepala Sekolah',
+            'schoolInfo'    => $schoolInfo,
+            'headmaster'    => $headmaster
+        ];
+
+        $views = [
+            view('profile/welcome', $data),
+        ];
+
+        $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
+
     public function aboutSchool()
     {
         $schoolInfo = $this->schoolInfo();

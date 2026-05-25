@@ -98,7 +98,7 @@
                             <h6>Dedikasi Membentuk <br> Generasi Berkarakter</h6>
                         </div>
                     </div>
-                    <a href="event-grid.html" class="it-btn-yellow theme-bg border-radius-100">
+                    <a href="<?= base_url('profil/sambutan-kepala-sekolah') ?>" class="it-btn-yellow theme-bg border-radius-100">
                         <span>
                             <span class="text-1">Sambutan Kepala Sekolah</span>
                             <span class="text-2">Sambutan Kepala Sekolah</span>
