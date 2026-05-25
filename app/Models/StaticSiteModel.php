@@ -15,6 +15,11 @@ class StaticSiteModel
                 'description'   => 'Laptop berbasis Chrome OS untuk pembelajaran digital, memudahkan akses ke aplikasi dan sumber belajar online',
                 'image'         => 'chromebook.webp',
             ],
+            [
+                'title'         => 'Layar Interaktif',
+                'description'   => 'Layar interaktif untuk pembelajaran digital, memudahkan akses ke aplikasi dan sumber belajar online',
+                'image'         => 'tka.webp',
+            ],
         ];
     }
 
