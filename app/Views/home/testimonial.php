@@ -40,7 +40,7 @@
                                                     <div class="it-testimonial-text">
                                                         <h5 class="mb-30">
                                                             <?= excerpt_words($testimonial['description']) ?>
-                                                            <span><a style="font-size: small;" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://">Baca Selengkapnya...</a></span>
+                                                            <span><a style="font-size: small;" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="<?= base_url('testimonial') ?>">Baca Selengkapnya...</a></span>
                                                         </h5>
                                                     </div>
                                                     <div class="it-testimonial-bottom d-flex align-items-center justify-content-between">

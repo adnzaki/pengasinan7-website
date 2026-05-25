@@ -16,3 +16,5 @@ $routes->group('profil', function (RouteCollection $routes) {
     $routes->get('sarana-pembelajaran', 'Profile::learningTools');
     $routes->get('sambutan-kepala-sekolah', 'Profile::welcomeMessage');
 });
+
+$routes->get('testimonial', 'Testimonial::index');
