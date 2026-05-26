@@ -38,13 +38,13 @@ class Kegiatan extends BaseController
     public function competitions()
     {
         $schoolInfo = $this->schoolInfo();
-        $extracurriculars = $this->staticSiteModel->ekskul();
+        $competitions = $this->staticSiteModel->competitions();
 
         $data = [
             'title'             => 'Perlombaan',
-            'titleImage'        => 'competition.webp',
+            'titleImage'        => 'lomba.webp',
             'schoolInfo'        => $schoolInfo,
-            'ekskul'            => $extracurriculars,
+            'competitions'      => $competitions,
         ];
 
         $views = [

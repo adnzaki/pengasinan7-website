@@ -94,7 +94,7 @@
                                     <ul class="it-submenu submenu">
                                         <li><a href="<?= base_url('kegiatan/ekstrakurikuler') ?>">Ekstrakurikuler</a></li>
                                         <!-- <li><a href="courses-v4.html">Test Kemampuan Akademik</a></li> -->
-                                        <li><a href="courses-v5.html">Perlombaan</a></li>
+                                        <li><a href="<?= base_url('kegiatan/perlombaan') ?>">Perlombaan</a></li>
                                     </ul>
                                     <!-- <div class="it-submenu submenu it-megamenu-wrap">
                                         <div class="row gx-50">

@@ -2,6 +2,37 @@
 
 class StaticSiteModel
 {
+    public function competitions()
+    {
+        return [
+            [
+                'title'         => 'Lomba Tingkat II / Penggalang',
+                'description'   => 'Lomba tingkat II atau penggalang adalah kompetisi yang diikuti oleh anggota pramuka tingkat penggalang, biasanya berusia antara 11 hingga 15 tahun. <br/><br/> Lomba ini menguji keterampilan, pengetahuan, dan kreativitas anggota pramuka dalam berbagai bidang seperti kepramukaan, seni, olahraga, dan kegiatan sosial.',
+                'image'         => 'penggalang.webp',
+            ],
+            [
+                'title'         => 'Pesta Siaga',
+                'description'   => 'Pesta siaga adalah lomba yang diikuti oleh anggota pramuka tingkat siaga, biasanya berusia antara 7 hingga 10 tahun. <br/><br/>Lomba ini dirancang untuk mengembangkan keterampilan dasar pramuka, seperti keterampilan bertahan hidup, kerja sama tim, dan kreativitas melalui berbagai aktivitas yang menyenangkan dan edukatif.',
+                'image'         => 'pesta-siaga.webp',
+            ],
+            [
+                'title'         => 'Kegiatan Olahraga Sekolah Nasional (KOSN)',
+                'description'   => 'Kegiatan olahraga sekolah nasional yang menggabungkan berbagai cabang olahraga dalam satu kompetisi besar. <br/><br/>KOSN bertujuan untuk meningkatkan prestasi olahraga siswa serta mempromosikan semangat sportivitas dan kebersamaan antar sekolah.',
+                'image'         => 'kosn.webp',
+            ],
+            [
+                'title'         => 'Sapta Lomba (PAI)',
+                'description'   => 'Sapta lomba adalah kompetisi yang diadakan secara tahunan untuk mengembangkan bakat dan minat peserta didik dalam bidang keagamaan, khususnya Pendidikan Agama Islam (PAI). <br/><br/>Lomba ini mencakup berbagai kategori seperti tilawatil Qur\'an, Pildacil, adzan, dan lain sebagainya, yang bertujuan untuk meningkatkan pemahaman dan kecintaan terhadap agama Islam.',
+                'image'         => 'sapta-lomba.webp',
+            ],
+            [
+                'title'         => 'Olahraga Tradisional (Oltrad)',
+                'description'   => 'Olahraga tradisional adalah kompetisi yang mengangkat berbagai jenis olahraga tradisional Indonesia, seperti egrang, bakiak, dan lain sebagainya. <br/><br/>Lomba ini bertujuan untuk melestarikan budaya olahraga tradisional serta mengembangkan keterampilan fisik, kerja sama tim, dan sportivitas di kalangan peserta didik.',
+                'image'         => 'oltrad.webp',
+            ],
+        ];
+    }
+
     public function ekskul()
     {
         return [
