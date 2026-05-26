@@ -187,6 +187,13 @@ class WpAdapter
         return $this;
     }
 
+    /**
+     * Set the response as array
+     * 
+     * @param bool $responseAsArray The response as array
+     * 
+     * @return $this
+     */
     public function setResponseAsArray(bool $responseAsArray)
     {
         $this->responseAsArray = $responseAsArray;
@@ -228,7 +235,7 @@ class WpAdapter
      * Get posts
      * 
      * @param int $page             The page being searched based on total post
-     * @param string $scope         Limit query based on scope
+     * @param array $include        Limit query based on scope
      * @param string|null $search   Limit results based on search parameter
      * @param string $taxonomy      Category | Tag
      * @param string $filter        Category or tag name being searched
