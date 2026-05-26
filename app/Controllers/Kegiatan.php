@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\StaticSiteModel;
 
-class Ekstrakurikuler extends BaseController
+class Kegiatan extends BaseController
 {
     protected StaticSiteModel $staticSiteModel;
 
@@ -13,7 +13,7 @@ class Ekstrakurikuler extends BaseController
         $this->staticSiteModel = new StaticSiteModel();
     }
 
-    public function index()
+    public function extracurriculars()
     {
         $schoolInfo = $this->schoolInfo();
         $extracurriculars = $this->staticSiteModel->ekskul();
@@ -27,7 +27,29 @@ class Ekstrakurikuler extends BaseController
 
         $views = [
             view('profile/title', $data),
-            view('ekskul/content', $data),
+            view('activity/ekskul', $data),
+        ];
+
+        $data['contents'] = implode('', $views);
+
+        return view('layout/main', $data);
+    }
+
+    public function competitions()
+    {
+        $schoolInfo = $this->schoolInfo();
+        $extracurriculars = $this->staticSiteModel->ekskul();
+
+        $data = [
+            'title'             => 'Perlombaan',
+            'titleImage'        => 'competition.webp',
+            'schoolInfo'        => $schoolInfo,
+            'ekskul'            => $extracurriculars,
+        ];
+
+        $views = [
+            view('profile/title', $data),
+            view('activity/competitions', $data),
         ];
 
         $data['contents'] = implode('', $views);

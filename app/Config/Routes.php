@@ -20,6 +20,6 @@ $routes->group('profil', function (RouteCollection $routes) {
 $routes->get('testimonial', 'Testimonial::index');
 $routes->get('pendaftaran', 'Registration::index');
 $routes->group('kegiatan', function (RouteCollection $routes) {
-    $routes->get('ekstrakurikuler', 'Ekstrakurikuler::index');
-    $routes->get('perlombaan', 'Competition::index');
+    $routes->get('ekstrakurikuler', 'Kegiatan::extracurriculars');
+    $routes->get('perlombaan', 'Kegiatan::competitions');
 });
