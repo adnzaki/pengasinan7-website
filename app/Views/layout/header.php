@@ -92,7 +92,7 @@
                                 <li class="has-dropdown">
                                     <a href="courses-v1.html">Kegiatan</a>
                                     <ul class="it-submenu submenu">
-                                        <li><a href="courses-v2.html">Ekstrakurikuler</a></li>
+                                        <li><a href="<?= base_url('kegiatan/ekstrakurikuler') ?>">Ekstrakurikuler</a></li>
                                         <!-- <li><a href="courses-v4.html">Test Kemampuan Akademik</a></li> -->
                                         <li><a href="courses-v5.html">Perlombaan</a></li>
                                     </ul>

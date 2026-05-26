@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Models\StaticSiteModel;
-
 class Registration extends BaseController
 {
     public function index()

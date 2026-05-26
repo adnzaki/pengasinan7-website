@@ -63,7 +63,7 @@ class Home extends BaseController
             'heros'         => $heros,
             'title'         => $schoolInfo['visi'],
             'features'      => $features,
-            'ekskuls'       => array_slice($this->ekskul(), 0, 3),
+            'ekskuls'       => array_slice($this->staticSiteModel->ekskul(), 0, 3),
             'testimonials'  => $this->staticSiteModel->testimonials(),
         ];
 
@@ -82,65 +82,5 @@ class Home extends BaseController
         return view('layout/main', $data);
     }
 
-    public function ekskul()
-    {
-        return [
-            [
-                'name'          => 'Pramuka',
-                'description'   => 'Mengajarkan keterampilan bertahan hidup, kepemimpinan, dan kerja sama tim melalui berbagai aktivitas di alam terbuka.',
-                'category'      => 'keterampilan',
-                'image'         => 'pramuka.webp',
-                'teacher'       => 2,
-                'students'      => 470,
-            ],
-            // [
-            //     'name'          => 'Seni Tari',
-            //     'description'   => 'Mengajarkan keterampilan tari tradisional dan kreatif melalui berbagai bentuk ekspresi seni.',
-            //     'category'      => 'keterampilan',
-            //     'image'         => 'seni-tari.webp',
-            //     'teacher'       => 1,
-            //     'students'      => 15,
-            // ],
-            [
-                'name'          => 'Rebana',
-                'description'   => 'Mengajarkan seni musik Islami dan meningkatkan rasa kebersamaan melalui permainan rebana.',
-                'category'      => 'keagamaan',
-                'image'         => 'rebana.webp',
-                'teacher'       => 1,
-                'students'      => 9,
-            ],
-            [
-                'name'          => 'Voli',
-                'description'   => 'Mengembangkan keterampilan fisik, kerja sama tim, dan sportivitas melalui olahraga voli secara terarah dan berkelanjutan.',
-                'category'      => 'olahraga',
-                'image'         => 'voli.webp',
-                'teacher'       => 1,
-                'students'      => 9,
-            ],
-            [
-                'name'          => 'Tenis Meja',
-                'description'   => 'Melatih ketangkasan, konsentrasi, dan refleks melalui permainan tenis meja yang seru dan menantang.',
-                'category'      => 'olahraga',
-                'image'         => 'tenis-meja.webp',
-                'teacher'       => 1,
-                'students'      => 30,
-            ],
-            [
-                'name'          => 'Musabah Tilawatil Qur\'an (MTQ)',
-                'description'   => 'Melatih kemampuan membaca, memahami, dan menghafal Al-Qur\'an serta meningkatkan kecintaan terhadap kitab suci.',
-                'category'      => 'keagamaan',
-                'image'         => 'mtq.webp',
-                'teacher'       => 1,
-                'students'      => 20,
-            ],
-            [
-                'name'          => 'Adzan',
-                'description'   => 'Melatih keterampilan adzan dan pemahaman tentang pentingnya panggilan sholat dalam kehidupan sehari-hari.',
-                'category'      => 'keagamaan',
-                'image'         => 'adzan.webp',
-                'teacher'       => 1,
-                'students'      => 4,
-            ]
-        ];
-    }
+    
 }
