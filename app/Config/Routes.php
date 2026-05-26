@@ -18,3 +18,4 @@ $routes->group('profil', function (RouteCollection $routes) {
 });
 
 $routes->get('testimonial', 'Testimonial::index');
+$routes->get('pendaftaran', 'Registration::index');

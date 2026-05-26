@@ -18,7 +18,7 @@
                                 <p>SDN Pengasinan VII berkomitmen dalam membentuk generasi berprestasi, berakhlak mulia dan berkarakter yang siap menghadapi masa depan.</p>
                             </div>
                             <div class="it-footer-widget-btn">
-                                <a href="<?= base_url('kontak'); ?>" class="it-btn-yellow theme-bg border-radius-100">
+                                <a href="<?= $schoolInfo['walink'] ?>" target="_blank" class="it-btn-yellow theme-bg border-radius-100">
                                     <span>
                                         <span class="text-1">Hubungi Kami</span>
                                         <span class="text-2">Hubungi Kami</span>
@@ -38,11 +38,9 @@
                             <h4 class="it-footer-widget-title">Sekolah Kami</h4>
                             <div class="it-footer-widget-menu">
                                 <ul>
-                                    <li><a href="#">Sejarah</a></li>
-                                    <li><a href="#">Visi Misi</a></li>
-                                    <li><a href="#">Struktur Organisasi</a></li>
-                                    <li><a href="#">Pendidik</a></li>
-                                    <li><a href="#">Tenaga Kependidikan</a></li>
+                                    <li><a href="<?= base_url('/profil/tentang-sekolah') ?>">Profil Sekolah</a></li>
+                                    <li><a href="<?= base_url('/profil/pendidik') ?>">Pendidik</a></li>
+                                    <li><a href="<?= base_url('/profil/tenaga-kependidikan') ?>">Tenaga Kependidikan</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -51,7 +49,7 @@
                         data-wow-delay=".9s">
                         <div class="it-footer-widget it-footer-col-1-4 d-flex justify-content-lg-center">
                             <div>
-                                <h4 class="it-footer-widget-title">Get Contact</h4>
+                                <h4 class="it-footer-widget-title">Kontak</h4>
                                 <div class="it-footer-widget-contact mb-25">
                                     <ul>
                                         <!-- <li><span>Phone:</span><a href="tel:+91123456789">(+91) 123-456-789</a></li> -->

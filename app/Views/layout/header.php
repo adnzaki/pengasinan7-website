@@ -115,9 +115,9 @@
                                         <li><a href="blog-sidebar.html">Artikel</a></li>
                                     </ul>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="contact-me.html">Kontak</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </nav>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="it-header-right-action d-flex justify-content-end align-items-center">
 
 
-                        <a href="courses-with-filter.html" class="it-btn-yellow border-radius-100 d-none d-md-flex">
+                        <a href="<?= base_url('pendaftaran') ?>" class="it-btn-yellow border-radius-100 d-none d-md-flex">
                             <span>
                                 <span class="text-1">Pendaftaran</span>
                                 <span class="text-2">Pendaftaran</span>

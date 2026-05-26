@@ -64,7 +64,8 @@ abstract class BaseController extends Controller
             'address'   => 'Jl. Telaga Sarangan I RT 08/08',
             'city'      => 'Rawalumbu, Kota Bekasi',
             'maps'      => 'https://maps.app.goo.gl/6WBZfv9hMysy5BWA9',
-
+            'waspmb'    => 'https://api.whatsapp.com/send?phone=6285111519914&text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20SPMB%20Tahun%20Ajaran%202026%2F2027.',
+            'walink'    => 'https://api.whatsapp.com/send?phone=6285111519914&text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20SDN%20Pengasinan%20VII.',
         ];
     }
 }
