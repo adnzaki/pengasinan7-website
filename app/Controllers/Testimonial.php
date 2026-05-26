@@ -21,12 +21,14 @@ class Testimonial extends BaseController
         $data = [
             'title'         => 'Testimonial',
             'schoolInfo'    => $schoolInfo,
-            'testimonials'  => $testimonials
+            'testimonials1' => array_slice($testimonials, 0, 3),
+            'testimonials2' => array_slice($testimonials, 3, 3),
         ];
 
         $views = [
             view('testimonial/index', $data),
             view('testimonial/content', $data),
+            view('testimonial/register', $data),
         ];
 
         $data['contents'] = implode('', $views);
