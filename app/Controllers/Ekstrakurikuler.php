@@ -27,6 +27,7 @@ class Ekstrakurikuler extends BaseController
 
         $views = [
             view('profile/title', $data),
+            view('ekskul/content', $data),
         ];
 
         $data['contents'] = implode('', $views);

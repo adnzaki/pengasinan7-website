@@ -43,24 +43,24 @@ class StaticSiteModel
                 'category'      => 'olahraga',
                 'image'         => 'tenis-meja.webp',
                 'teacher'       => 1,
-                'students'      => 30,
+                'students'      => 5,
             ],
-            [
-                'name'          => 'Musabah Tilawatil Qur\'an (MTQ)',
-                'description'   => 'Melatih kemampuan membaca, memahami, dan menghafal Al-Qur\'an serta meningkatkan kecintaan terhadap kitab suci.',
-                'category'      => 'keagamaan',
-                'image'         => 'mtq.webp',
-                'teacher'       => 1,
-                'students'      => 20,
-            ],
-            [
-                'name'          => 'Adzan',
-                'description'   => 'Melatih keterampilan adzan dan pemahaman tentang pentingnya panggilan sholat dalam kehidupan sehari-hari.',
-                'category'      => 'keagamaan',
-                'image'         => 'adzan.webp',
-                'teacher'       => 1,
-                'students'      => 4,
-            ]
+            // [
+            //     'name'          => 'Musabah Tilawatil Qur\'an (MTQ)',
+            //     'description'   => 'Melatih kemampuan membaca, memahami, dan menghafal Al-Qur\'an serta meningkatkan kecintaan terhadap kitab suci.',
+            //     'category'      => 'keagamaan',
+            //     'image'         => 'mtq.webp',
+            //     'teacher'       => 1,
+            //     'students'      => 20,
+            // ],
+            // [
+            //     'name'          => 'Adzan',
+            //     'description'   => 'Melatih keterampilan adzan dan pemahaman tentang pentingnya panggilan sholat dalam kehidupan sehari-hari.',
+            //     'category'      => 'keagamaan',
+            //     'image'         => 'adzan.webp',
+            //     'teacher'       => 1,
+            //     'students'      => 4,
+            // ]
         ];
     }
     
