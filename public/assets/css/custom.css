@@ -88,6 +88,16 @@ li.timeline-list-title {
   border-bottom: none !important;
   padding-bottom: 0 !important;
 }
+
+.post-thumbnail {
+  width: 100%;
+  height: 270px; /* tinggi tetap */
+  object-fit: cover; /* potong gambar agar proporsional */
+  aspect-ratio: 417 / 270; /* jaga rasio */
+  border-radius: 8px; /* opsional, biar rapi */
+}
+
+
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {

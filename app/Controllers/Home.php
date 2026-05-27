@@ -6,7 +6,9 @@ use App\Models\StaticSiteModel;
 
 class Home extends BaseController
 {
-    protected $staticSiteModel;
+    use PostTrait;
+
+    protected StaticSiteModel $staticSiteModel;
 
     public function __construct()
     {
@@ -16,6 +18,11 @@ class Home extends BaseController
     public function index(): string
     {
         $schoolInfo = $this->schoolInfo();
+
+        $recentPosts = wp()->setSinglePostUrl($this->singlePostUrl)
+            ->setPerPage(3)
+            ->getPosts(1, ['media', 'category']);
+
         $heros = [
             [
                 'title'     => 'Menghadirkan Masa Depan Yang Berkualitas',
@@ -65,6 +72,8 @@ class Home extends BaseController
             'features'      => $features,
             'ekskuls'       => array_slice($this->staticSiteModel->ekskul(), 0, 3),
             'testimonials'  => $this->staticSiteModel->testimonials(),
+            'recentStatus'  => $recentPosts['status'],
+            'recentPosts'   => $recentPosts['data'],
         ];
 
         $views = [
@@ -73,8 +82,8 @@ class Home extends BaseController
             view('home/about', $data),
             view('home/ekskul', $data),
             view('home/testimonial', $data),
-            view('home/partner', $data),
-            view('home/sections', $data),
+            // view('home/partner', $data),
+            view('home/news', $data),
         ];
 
         $data['contents'] = implode('', $views);

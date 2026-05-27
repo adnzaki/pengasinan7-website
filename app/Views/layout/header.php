@@ -111,7 +111,8 @@
                                 <li class="has-dropdown">
                                     <a href="blog-grid.html">Berita</a>
                                     <ul class="it-submenu submenu">
-                                        <li><a href="blog-grid.html">Pengumuman</a></li>
+                                        <li><a href="blog-grid.html">Kegiatan</a></li>
+                                        <li><a href="blog-grid.html">Pemberitahuan</a></li>
                                         <li><a href="blog-sidebar.html">Artikel</a></li>
                                     </ul>
                                 </li>
