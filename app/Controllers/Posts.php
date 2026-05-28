@@ -50,8 +50,9 @@ class Posts extends BaseController
         return view('layout/main', $data);
     }
 
-    public function read($slug)
+    public function read(string $slug)
     {
+        $schoolInfo = $this->schoolInfo();
         $post = wp()->setSinglePostUrl($this->singlePostUrl)->readPost($slug);
         $comments = [];
         if(! empty($post)) {
@@ -59,13 +60,17 @@ class Posts extends BaseController
             insert_visitor();
             
             $this->updateCounter($post->id);
-            $comments = wp()->getCommentsWithReplies($post->id);
         }
+
+        $recentPosts = array_filter($this->getRecentPosts(), function($p) use ($post) {
+            return $p->id !== $post->id;
+        });
 
         $pageContent = [
             'post'          => $post,
             'tags'          => wp()->getTags(),
-            'comments'      => $comments
+            'comments'      => $comments,
+            'recentPosts'   => $recentPosts,
         ];
 
         $postTitle = $post->title ?? 'Post tidak ditemukan';
@@ -75,15 +80,31 @@ class Posts extends BaseController
             'image'         => $post->singlePostImage ?? '',
             'description'   => $post->excerpt ?? '',
             'url'           => $post->url ?? '',
-        ];
-
+        ];       
+        
         $data = [
             'title'         => $postTitle,
             'og_meta'       => $openGraphMeta,
-            'content'       => view('single-post/content', $pageContent),
+            'schoolInfo'    => $schoolInfo,
         ];
 
+        $views = [
+            // view('single-post/breadcrumb', $pageContent),
+            view('single-post/content', $pageContent),
+        ];
+
+
+        $data['contents'] = implode('', $views);
+
         return view('layout/main', $data);
+    }
+
+    private function getRecentPosts()
+    {
+        $include = ['media', 'category'];
+        $posts = wp()->setSinglePostUrl($this->singlePostUrl)->getPosts(1, $include);
+
+        return $posts['data'] ?? [];
     }
 
     public function addComment()
@@ -110,28 +131,5 @@ class Posts extends BaseController
         } else {
             return redirect()->back()->with('error', 'Gagal menambahkan komentar. Penyebab: ' . json_encode($result));
         }
-    }
-
-
-
-    public function testRead($slug)
-    {
-        $getPost    = wp()->readPost($slug);
-        $content    = $getPost['contents'];
-        $post       = $content['post'];
-        $this->updateCounter($post->id);
-
-        $pageContent = [
-            'post'          => $post,
-            'tags'          => wp()->getTags(),
-            'comments'      => wp()->getCommentsWithReplies($post->id),
-        ];
-
-        $data = [
-            'title'         => $post->title,
-            'content'       => $pageContent,
-        ];
-
-        return $this->response->setJSON($data);
     }
 }

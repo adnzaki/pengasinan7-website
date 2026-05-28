@@ -35,7 +35,13 @@
 </head>
 
 <body id="body" class="it-magic-cursor">
+    <?php if (session()->getFlashdata('success')): ?>
+        <?= view('layout/toast', ['message' => session()->getFlashdata('success'), 'color' => 'success']) ?>
+    <?php endif; ?>
 
+    <?php if (session()->getFlashdata('error')): ?>
+        <?= view('layout/toast', ['message' => session()->getFlashdata('error'), 'color' => 'danger']) ?>
+    <?php endif; ?>
     <!-- preloader -->
     <div id="preloader">
         <div class="preloader">
