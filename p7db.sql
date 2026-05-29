@@ -14,12 +14,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-
--- Dumping database structure for pengasinan7
-DROP DATABASE IF EXISTS `pengasinan7`;
-CREATE DATABASE IF NOT EXISTS `pengasinan7` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `pengasinan7`;
-
 -- Dumping structure for table pengasinan7.migrations
 DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE IF NOT EXISTS `migrations` (
@@ -309,7 +303,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
   KEY `comment_author_email` (`comment_author_email`(10))
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table pengasinan7.wp_comments: ~0 rows (approximately)
+-- Dumping data for table pengasinan7.wp_comments: ~1 rows (approximately)
 REPLACE INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 	(1, 1, 'A WordPress Commenter', 'wapuu@wordpress.example', 'https://wordpress.org/', '', '2026-05-26 17:18:43', '2026-05-26 17:18:43', 'Hi, this is a comment.\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.\nCommenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.', 0, 'post-trashed', '', 'comment', 0, 0);
 
@@ -616,7 +610,7 @@ CREATE TABLE IF NOT EXISTS `wp_post_views` (
   KEY `post_id` (`post_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table pengasinan7.wp_post_views: ~3 rows (approximately)
+-- Dumping data for table pengasinan7.wp_post_views: ~4 rows (approximately)
 REPLACE INTO `wp_post_views` (`id`, `post_id`, `views`, `created_at`, `updated_at`) VALUES
 	(1, 19, 56, '2026-05-27 17:25:13', '2026-05-29 07:19:38'),
 	(2, 17, 2, '2026-05-28 15:16:02', '2026-05-28 16:27:27'),
@@ -726,7 +720,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table pengasinan7.wp_usermeta: ~18 rows (approximately)
+-- Dumping data for table pengasinan7.wp_usermeta: ~21 rows (approximately)
 REPLACE INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
 	(1, 1, 'nickname', 'admin_sekolah'),
 	(2, 1, 'first_name', 'Admin'),
@@ -769,7 +763,7 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
   KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Dumping data for table pengasinan7.wp_users: ~0 rows (approximately)
+-- Dumping data for table pengasinan7.wp_users: ~1 rows (approximately)
 REPLACE INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 	(1, 'admin_sekolah', '$wp$2y$12$/.toGd/BdoYdi1cN3mjzGuieNF9OPrnfsUnbW/L/LicxigXBUqBI6', 'admin_sekolah', 'sdnpengasinantujuh@gmail.com', 'http://localhost/pengasinan7-website/cms', '2026-05-26 17:18:43', '', 0, 'Admin Sekolah');
 
