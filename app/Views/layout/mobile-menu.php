@@ -5,7 +5,7 @@
         </div>
         <div class="itoffcanvas__logo">
             <a href="index.html">
-                <img src="<?= base_url('assets/img/logo/logo-black.png'); ?>" alt="">
+                <img class="header-logo" src="<?= base_url('assets/img/logo/apple-touch-icon.png'); ?>" alt="">
             </a>
         </div>
         <div class="itoffcanvas__text">
