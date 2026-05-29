@@ -31,7 +31,7 @@
                                                     <?= $hero['subtitle'] ?>
                                                 </p>
                                                 <div class="it-slider-btn">
-                                                    <a href="courses-v3.html" class="it-btn-yellow theme-bg border-radius-100">
+                                                    <a href="<?= base_url('/profil/tentang-sekolah') ?>" class="it-btn-yellow theme-bg border-radius-100">
                                                         <span>
                                                             <span class="text-1">Cari Tahu</span>
                                                             <span class="text-2">Cari Tahu</span>
