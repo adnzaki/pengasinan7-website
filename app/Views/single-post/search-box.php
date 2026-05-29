@@ -1,10 +1,10 @@
-<div class="sidebar-widget mb-60">
+<div class="sidebar-widget mb-60 <?= $visibility ?>">
     <h4 class="sidebar-widget-title mb-25">Pencarian Berita</h4>
     <!-- search -->
     <div class="sidebar-search-box p-relative">
         <form action="#">
             <div class="sidebar-search-input">
-                <input type="text" placeholder="Ketik sesuatu...">
+                <input type="text" name="search" id="searchForm" placeholder="Ketik sesuatu...">
             </div>
             <div class="sidebar-search-button">
                 <button type="submit">

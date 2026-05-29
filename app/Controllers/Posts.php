@@ -9,6 +9,7 @@ class Posts extends BaseController
     public function index($taxonomy = '', $filter = '')
     {
         insert_visitor();
+        $schoolInfo = $this->schoolInfo();
         $pager = \Config\Services::pager();
         $page = (int) ($this->request->getGet('page') ?? 1);
         $search = $this->request->getGet('search');
@@ -18,16 +19,17 @@ class Posts extends BaseController
         $wp = wp()->setPerPage($perPage)->setSinglePostUrl($this->singlePostUrl);
 
         $taxonomyFilter = [];
-        if($taxonomy === 'category') {
+        if($taxonomy === 'kategori') {
             $categories = wp()->categorySlug($filter)->getCategories(1);
             $taxonomyFilter = ['categories' => $categories[0]->id];
+            $taxonomy = 'category';
         } elseif($taxonomy === 'tag') {
             $tags = wp()->tagSlug($filter)->getTags(1);
             $taxonomyFilter = ['tags' => $tags[0]->id];
         }
 
         $totalPost = wp()->getTotalPost(array_merge(['search' => $search], $taxonomyFilter));
-        $include = ['media', 'category', 'comment'];
+        $include = ['media', 'category', 'author'];
         $posts = $wp->startFrom($offset)->getPosts($page, $include, $search, $taxonomy, $filter);
 
 
@@ -37,15 +39,26 @@ class Posts extends BaseController
             'pageLinks'     => $pager->makeLinks($page, $perPage, $totalPost, 'site_pager'),
             'getPage'       => $page,
             'count'         => $pager->getPageCount(),
-            'tags'          => wp()->getTags(),
-            'notHome'       => true,
+            // 'tags'          => wp()->getTags(),
+            'categories'    => array_filter(wp()->getCategories(10, 'id'), function($cat) {
+                return $cat->id !== 1; // exclude uncategorized
+            }),
+            'popularPosts'   => $this->getPopularPosts(),
         ];
 
         $data = [
-            'title'         => 'Bit & Bait - Semua Post',
+            'title'         => 'Berita',
             'og_meta'       => $this->openGraphMeta,
-            'content'       => view('layout/post-list', $pageContent),
+            'schoolInfo'    => $schoolInfo,
         ];
+
+        $views = [
+            // view('single-post/breadcrumb', $pageContent),
+            view('posts/content', $pageContent),
+        ];
+
+
+        $data['contents'] = implode('', $views);
 
         return view('layout/main', $data);
     }
@@ -97,6 +110,26 @@ class Posts extends BaseController
         $data['contents'] = implode('', $views);
 
         return view('layout/main', $data);
+    }
+
+    private function getPopularPosts()
+    {
+        $ids = [];
+        $popularPosts = [];
+        $model = new \App\Models\PostViewModel();
+        $topPosts = $model->orderBy('views', 'desc');
+
+        if ($topPosts->countAllResults(false) > 0) {
+            $ids = $topPosts->findAll(5);
+            $ids = array_column($ids, 'post_id');
+            $popularPosts = wp()->setPerPage(5)
+                ->setSinglePostUrl('read')
+                ->setOrder('include')
+                ->setIds($ids)
+                ->getPosts(1, ['media', 'category'])['data'];
+        }
+
+        return $popularPosts;
     }
 
     private function getRecentPosts()

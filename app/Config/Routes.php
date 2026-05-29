@@ -24,10 +24,9 @@ $routes->group('kegiatan', function (RouteCollection $routes) {
     $routes->get('perlombaan', 'Kegiatan::competitions');
 });
 
-$routes->group('posts', function (RouteCollection $routes) {
+$routes->group('berita', function (RouteCollection $routes) {
     $routes->get('/', 'Posts::index');
     $routes->get('(:any)/(:any)', 'Posts::index/$1/$2'); // handle category and tag filter
-    $routes->get('read/(:any)', 'Posts::read/$1');
 });
 
 $routes->get('read/(:any)', 'Posts::read/$1');

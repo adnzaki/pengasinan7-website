@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="it-blog-button text-center mt-30">
-                    <a href="blog-grid.html" class="it-btn-yellow theme-bg border-radius-100">
+                    <a href="<?= base_url('berita') ?>" class="it-btn-yellow theme-bg border-radius-100">
                         <span>
                             <span class="text-1">Lihat Semua Berita</span>
                             <span class="text-2">Lihat Semua Berita</span>

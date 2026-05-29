@@ -90,11 +90,8 @@ li.timeline-list-title {
 }
 
 .post-thumbnail {
-  width: 100%;
-  height: 270px; /* tinggi tetap */
+  height: 400px; /* tinggi tetap */
   object-fit: cover; /* potong gambar agar proporsional */
-  aspect-ratio: 417 / 270; /* jaga rasio */
-  border-radius: 8px; /* opsional, biar rapi */
 }
 
 
@@ -107,10 +104,17 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 @media (max-width: 576px) {
+  .post-category {
+    margin-left: -25px;
+  }
+  .post-thumbnail {
+    height: 200px; /* tinggi lebih kecil untuk layar kecil */
+  }
   .header-logo {
     max-height: 45px;
     padding-top: 0;
     padding-bottom: 0;
+    object-fit: contain;
   }
 
   .organization {
