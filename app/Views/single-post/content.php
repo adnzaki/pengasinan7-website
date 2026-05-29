@@ -28,6 +28,13 @@
                                 <div class="postbox-dsc" style="text-align: justify;">
                                     <?= $post->content ?>
                                 </div>
+                                <a href="<?= base_url('berita') ?>" class="it-btn-yellow theme-bg mt-30">
+                                    <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;
+                                    <span>
+                                        <span class="text-1">Kembali ke halaman berita</span>
+                                        <span class="text-2">Kembali ke halaman berita</span>
+                                    </span>
+                                </a>
 
 
                             </div>
@@ -62,7 +69,7 @@
                         <!-- post -->
                         <?= view('single-post/posts', ['posts' => $recentPosts, 'title' => 'Berita Terbaru']) ?>
 
-                        
+
                     </div>
                 </div>
             </div>
