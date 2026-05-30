@@ -7,7 +7,9 @@
     <title>SDN Pengasinan VII <?= $title ? '- ' . $title : ''; ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="keywords" content="sdn pengasinan 7, pengasinan vii, sekolah dasar, sd, sekolah dasar negeri, sekolah dasar pengasinan vii, sekolah dasar pengasinan 7, sd pengasinan vii, sd pengasinan 7, sekolah dasar di bekasi, sekolah dasar di kota bekasi, sekolah dasar terbaik di bekasi, sekolah dasar unggulan di bekasi">
+    <meta property="og:title" content="<?= $og_meta['title'] ?>">
+    <meta property="og:image" content="<?= $og_meta['image'] ?>">
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/img/logo/favicon.ico'); ?>">

@@ -26,7 +26,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="it-course-item mb-35">
                                     <div class="it-course-thumb z-index-1 border-radius-20">
-                                        <a href="courses-details-v3.html"><img class="w-100" src="<?= base_url('assets/img/ekskul/' . $item['image']); ?>" alt="<?= $item['image'] ?? 'course-1-1.jpg'; ?>" alt=""></a>
+                                        <a href="#"><img class="w-100" src="<?= base_url('assets/img/ekskul/' . $item['image']); ?>" alt="<?= $item['image'] ?? 'course-1-1.jpg'; ?>" alt=""></a>
                                         <span class="course-category"><?= ucfirst($item['category']) ?></span>
                                         <button class="wishlist-btn">
                                             <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@
                                     </div>
                                     <div class="it-course-content p-relative">
 
-                                        <h5 class="it-course-title mb-20"><a class="border-line" href="courses-details-v3.html"><?= $item['name']; ?></a></h5>
+                                        <h5 class="it-course-title mb-20"><a class="border-line" href="#"><?= $item['name']; ?></a></h5>
                                         <div class="it-course-rating mb-10">
                                             <div>
 

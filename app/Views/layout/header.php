@@ -90,10 +90,9 @@
                                     </div>
                                 </li>
                                 <li class="has-dropdown">
-                                    <a href="courses-v1.html">Kegiatan</a>
+                                    <a href="#">Kegiatan</a>
                                     <ul class="it-submenu submenu">
                                         <li><a href="<?= base_url('kegiatan/ekstrakurikuler') ?>">Ekstrakurikuler</a></li>
-                                        <!-- <li><a href="courses-v4.html">Test Kemampuan Akademik</a></li> -->
                                         <li><a href="<?= base_url('kegiatan/perlombaan') ?>">Perlombaan</a></li>
                                     </ul>
                                     <!-- <div class="it-submenu submenu it-megamenu-wrap">
@@ -116,9 +115,7 @@
                                         <li><a href="<?= base_url('berita/kategori/artikel') ?>">Artikel</a></li>
                                     </ul>
                                 </li>
-                                <!-- <li>
-                                    <a href="contact-me.html">Kontak</a>
-                                </li> -->
+                                
                             </ul>
                         </nav>
                     </div>

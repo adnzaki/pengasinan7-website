@@ -22,7 +22,11 @@ class Profile extends BaseController
         $data = [
             'title'         => 'Sambutan Kepala Sekolah',
             'schoolInfo'    => $schoolInfo,
-            'headmaster'    => $headmaster
+            'headmaster'    => $headmaster,
+            'og_meta'       => [
+                'title' => 'Sambutan Kepala Sekolah - SDN Pengasinan VII',
+                'image' => $headmaster['photo']
+            ]
         ];
 
         $views = [
@@ -109,6 +113,10 @@ class Profile extends BaseController
             'summary'       => $summary,
             'missions'      => $missions,
             'schoolNames'   => $schoolNames,
+            'og_meta'       => [
+                'title' => 'Profil Sekolah - SDN Pengasinan VII',
+                'image' => 'gedung-sekolah.webp'
+            ]
         ];
 
         $views = [
@@ -135,6 +143,10 @@ class Profile extends BaseController
             'classRooms'    => $classRooms,
             'highlights'    => $highlights,
             'stats'         => $stats,
+            'og_meta'       => [
+                'title' => 'Prasarana - SDN Pengasinan VII',
+                'image' => 'facilities/gedung.webp'
+            ]
         ];
 
         $views = [
@@ -160,6 +172,10 @@ class Profile extends BaseController
             'title'         => 'Sarana Pembelajaran',
             'titleImage'    => 'tools/sarana.webp',
             'learningTools' => $learningTools,
+            'og_meta'       => [
+                'title' => 'Sarana Pembelajaran - SDN Pengasinan VII',
+                'image' => 'tools/sarana.webp'
+            ]
         ];
 
         $views = [
@@ -182,6 +198,10 @@ class Profile extends BaseController
             'title'         => 'Ruang Kelas',
             'titleImage'    => 'ruang-perpus.webp',
             'classRooms'    => $classRooms,
+            'og_meta'       => [
+                'title' => 'Ruang Kelas - SDN Pengasinan VII',
+                'image' => 'ruang-perpus.webp'
+            ]
         ];
 
         $views = [

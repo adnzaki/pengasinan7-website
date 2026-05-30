@@ -74,6 +74,10 @@ class Home extends BaseController
             'testimonials'  => $this->staticSiteModel->testimonials(),
             'recentStatus'  => $recentPosts['status'],
             'recentPosts'   => $recentPosts['data'],
+            'og_meta'       => [
+                'title' => 'SDN Pengasinan VII - ' . $schoolInfo['visi'],
+                'image' => 'sdn-hero-1.webp'
+            ]
         ];
 
         $views = [

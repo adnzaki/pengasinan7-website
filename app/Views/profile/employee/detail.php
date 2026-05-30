@@ -6,7 +6,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="it-breadcrumb-content z-index-1">
                     <div class="it-breadcrumb-list-2">
-                        <span><a href="index.html">Home</a></span>
+                        <span><a href="<?= base_url() ?>">Home</a></span>
                         <span class="dvdr">
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.6364 8.1364C14.9879 7.78492 14.9879 7.21508 14.6364 6.8636L8.90883 1.13604C8.55736 0.784567 7.98751 0.784567 7.63604 1.13604C7.28457 1.48751 7.28457 2.05736 7.63604 2.40883L12.7272 7.5L7.63604 12.5912C7.28457 12.9426 7.28457 13.5125 7.63604 13.864C7.98751 14.2154 8.55736 14.2154 8.90883 13.864L14.6364 8.1364ZM0 7.5V8.4H14V7.5V6.6H0V7.5Z" fill="white" />

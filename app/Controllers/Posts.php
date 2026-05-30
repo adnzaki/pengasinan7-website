@@ -91,7 +91,6 @@ class Posts extends BaseController
         $openGraphMeta = [
             'title'         => $postTitle,
             'image'         => $post->singlePostImage ?? '',
-            'description'   => $post->excerpt ?? '',
             'url'           => $post->url ?? '',
         ];       
         

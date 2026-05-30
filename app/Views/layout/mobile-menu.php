@@ -4,7 +4,7 @@
             <button class="close-btn"><i class="fal fa-times"></i></button>
         </div>
         <div class="itoffcanvas__logo">
-            <a href="index.html">
+            <a href="<?= base_url() ?>">
                 <img class="header-logo" src="<?= base_url('assets/img/logo/apple-touch-icon.png'); ?>" alt="">
             </a>
         </div>

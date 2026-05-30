@@ -14,6 +14,10 @@ class Registration extends BaseController
             'titleImage'    => base_url('assets/img/spmb/header.webp'),
             'terms'         => $this->terms(),
             'timeline'      => $this->timeline(),
+            'og_meta'       => [
+                'title' => 'Pendaftaran - SDN Pengasinan VII',
+                'image' => base_url('assets/img/spmb/header.webp')
+            ]
         ];
 
         $views = [

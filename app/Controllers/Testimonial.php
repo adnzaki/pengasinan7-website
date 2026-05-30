@@ -6,6 +6,7 @@ use App\Models\StaticSiteModel;
 
 class Testimonial extends BaseController
 {
+    use PostTrait;
     protected StaticSiteModel $staticSiteModel;
 
     public function __construct()
@@ -23,6 +24,10 @@ class Testimonial extends BaseController
             'schoolInfo'    => $schoolInfo,
             'testimonials1' => array_slice($testimonials, 0, 3),
             'testimonials2' => array_slice($testimonials, 3, 3),
+            'og_meta'       => [
+                'title' => 'Testimonial - SDN Pengasinan VII',
+                'image' => $this->openGraphMeta['image']
+            ]
         ];
 
         $views = [

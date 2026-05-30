@@ -15,12 +15,17 @@ class Employee extends BaseController
     {
         $schoolInfo = $this->schoolInfo();
         $employee = $this->employeeModel->where('type', 'teacher')->findAll();
+        
 
         $data = [
             'title'         => 'Pendidik',
             'schoolInfo'    => $schoolInfo,
             'titleImage'    => 'employee/teachers.webp',
-            'employees'     => $employee
+            'employees'     => $employee,
+            'og_meta'       => [
+                'title' => 'Pendidik - SDN Pengasinan VII',
+                'image' => 'employee/teachers.webp'
+            ]
         ];
 
         $views = [
@@ -42,7 +47,11 @@ class Employee extends BaseController
             'title'         => 'Tenaga Kependidikan',
             'schoolInfo'    => $schoolInfo,
             'titleImage'    => 'employee/staff.webp',
-            'employees'     => $employee
+            'employees'     => $employee,
+            'og_meta'       => [
+                'title' => 'Tenaga Kependidikan - SDN Pengasinan VII',
+                'image' => 'employee/staff.webp'
+            ]
         ];
 
         $views = [
@@ -69,7 +78,11 @@ class Employee extends BaseController
         $data = [
             'title'         => $employee['name'],
             'schoolInfo'    => $schoolInfo,
-            'employee'      => $employee
+            'employee'      => $employee,
+            'og_meta'       => [
+                'title' => $employee['name'] . ' - SDN Pengasinan VII',
+                'image' => $employee['photo']
+            ]
         ];
 
         $views = [

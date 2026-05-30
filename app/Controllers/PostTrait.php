@@ -14,9 +14,8 @@ trait PostTrait
     {
         $this->model = new PostViewModel();
         $this->openGraphMeta = [
-            'title'         => 'Bit & Bait',
-            'description'   => 'Merangkai logika dan rasa dalam tiap baris kode',
-            'image'         => base_url('img/core-img/Bit-Bait-LogoFull.png'),
+            'title'         => 'SDN Pengasinan VII',
+            'image'         => base_url('assets/img/logo/apple-touch-icon.png'),
             'url'           => base_url(),
         ];
     }

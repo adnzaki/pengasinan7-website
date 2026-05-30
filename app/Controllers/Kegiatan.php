@@ -23,6 +23,10 @@ class Kegiatan extends BaseController
             'titleImage'        => 'ekskul.webp',
             'schoolInfo'        => $schoolInfo,
             'ekskul'            => $extracurriculars,
+            'og_meta'           => [
+                'title' => 'Ekstrakurikuler - SDN Pengasinan VII',
+                'image' => 'ekskul.webp'
+            ]
         ];
 
         $views = [
@@ -45,6 +49,10 @@ class Kegiatan extends BaseController
             'titleImage'        => 'lomba.webp',
             'schoolInfo'        => $schoolInfo,
             'competitions'      => $competitions,
+            'og_meta'           => [
+                'title' => 'Perlombaan - SDN Pengasinan VII',
+                'image' => 'lomba.webp'
+            ]
         ];
 
         $views = [

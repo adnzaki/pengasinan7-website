@@ -20,7 +20,7 @@
                         </div>
                         <div class="it-event-content">
                             <h5 class="it-event-title mb-20">
-                                <a class="border-line" href="event-details.html"><?= $tool['title'] ?></a>
+                                <a class="border-line" href="#"><?= $tool['title'] ?></a>
                             </h5>
                             <div class="it-event-meta mb-25">
                                 <span>
@@ -35,19 +35,7 @@
                                 </span>
                                 <?= $tool['description'] ?>
                             </div>
-                            <!-- <div class="it-event-btn">
-                            <a href="event-details.html" class="it-btn-yellow w-100">
-                                <span>
-                                    <span class="text-1">Event Details</span>
-                                    <span class="text-2">Event Details</span>
-                                </span>
-                                <i>
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.6364 8.24235C14.9879 7.89088 14.9879 7.32103 14.6364 6.96956L8.90883 1.242C8.55736 0.890524 7.98751 0.890524 7.63604 1.242C7.28457 1.59347 7.28457 2.16332 7.63604 2.51479L12.7272 7.60596L7.63604 12.6971C7.28457 13.0486 7.28457 13.6184 7.63604 13.9699C7.98751 14.3214 8.55736 14.3214 8.90883 13.9699L14.6364 8.24235ZM0 7.60596V8.50596H14V7.60596V6.70596H0V7.60596Z" fill="currentcolor" />
-                                    </svg>
-                                </i>
-                            </a>
-                        </div> -->
+                            
                         </div>
                     </div>
                 </div>
