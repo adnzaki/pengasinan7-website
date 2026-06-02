@@ -94,8 +94,8 @@ li.timeline-list-title {
   object-fit: cover; /* potong gambar agar proporsional */
 }
 
-.postbox-dsc figure.wp-block-image.size-large img {
-  object-fit: contain;
+.postbox-dsc figure.wp-block-image img {
+  object-fit: contain !important;
 }
 
 
