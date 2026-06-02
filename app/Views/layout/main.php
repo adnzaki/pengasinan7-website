@@ -32,7 +32,7 @@
     <!-- Theme / Main CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/spacing.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/site.css'); ?>">
 
 </head>
 
