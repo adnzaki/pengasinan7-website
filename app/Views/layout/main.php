@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SDN Pengasinan VII <?= $title ? '- ' . $title : ''; ?></title>
+    <title><?= $title ?? 'SDN Pengasinan VII'; ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="sdn pengasinan 7, pengasinan vii, sekolah dasar, sd, sekolah dasar negeri, sekolah dasar pengasinan vii, sekolah dasar pengasinan 7, sd pengasinan vii, sd pengasinan 7, sekolah dasar di bekasi, sekolah dasar di kota bekasi, sekolah dasar terbaik di bekasi, sekolah dasar unggulan di bekasi">
