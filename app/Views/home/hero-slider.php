@@ -31,10 +31,10 @@
                                                     <?= $hero['subtitle'] ?>
                                                 </p>
                                                 <div class="it-slider-btn">
-                                                    <a href="<?= base_url('/profil/tentang-sekolah') ?>" class="it-btn-yellow theme-bg border-radius-100">
+                                                    <a href="<?= base_url('pendaftaran') ?>" class="it-btn-yellow theme-bg border-radius-100">
                                                         <span>
-                                                            <span class="text-1">Cari Tahu</span>
-                                                            <span class="text-2">Cari Tahu</span>
+                                                            <span class="text-1">Info SPMB</span>
+                                                            <span class="text-2">Info SPMB</span>
                                                         </span>
                                                         <i>
                                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">

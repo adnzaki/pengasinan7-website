@@ -49,19 +49,19 @@ class Home extends BaseController
                 'icon'          => 'fa-regular fa-school',
                 'title'         => 'Pendidikan Dasar',
                 'description'   => 'Belajar membaca, menulis, berhitung, serta penanaman nilai-nilai karakter yang menyenangkan dan mendidik.',
-                'link'          => '#',
+                'link'          => base_url('profil/tentang-sekolah'),
             ],
             [
                 'icon'          => 'fa-solid fa-shield',
                 'title'         => 'Lingkungan Belajar',
                 'description'   => 'Belajar sambil bereksplorasi di lingkungan yang aman dan ramah anak.',
-                'link'          => '#',
+                'link'          => base_url('profil/prasarana'),
             ],
             [
                 'icon'          => 'fa-regular fa-clipboard-check',
                 'title'         => 'Guru berpengalaman',
                 'description'   => 'Guru yang berdedikasi dan berpengalaman membimbing siswa dalam proses belajar mengajar.',
-                'link'          => '#',
+                'link'          => base_url('profil/pendidik'),
             ],
         ];
 

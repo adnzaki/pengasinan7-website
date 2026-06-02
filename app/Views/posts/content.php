@@ -34,14 +34,14 @@
                                         </svg>
                                         <?= $post->author ?>
                                     </span>
-                                    <span class="d-none d-md-block">
+                                    <span class="d-none d-md-block" style="color: var(--it-theme-1);">
                                         <i class="fa-regular fa-newspaper"></i>
                                         &nbsp;&nbsp;<?= $post->categories ?>
                                     </span>
-                                    
+
                                 </div>
                                 <span class="d-block d-md-none" style="margin-top: -20px;margin-bottom: 30px;">
-                                    <i class="fa-regular fa-newspaper"></i>
+                                    <i class="fa-regular fa-newspaper" style="color: var(--it-theme-1);"></i>
                                     &nbsp;&nbsp;<?= $post->categories ?>
                                 </span>
                                 <h4 class="it-section-title">
