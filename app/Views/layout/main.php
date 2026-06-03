@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= $title ?? 'SDN Pengasinan VII'; ?></title>
-    <meta name="description" content="">
+    <meta name="description" content="SDN Pengasinan VII adalah sekolah dasar negeri yang terletak di Bekasi, Indonesia. Kami berkomitmen untuk memberikan pendidikan berkualitas kepada siswa kami guna menyiapkan generasi yang berprestasi, berakhlak mulia, dan berkarakter.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="sdn pengasinan 7, pengasinan vii, sekolah dasar, sd, sekolah dasar negeri, sekolah dasar pengasinan vii, sekolah dasar pengasinan 7, sd pengasinan vii, sd pengasinan 7, sekolah dasar di bekasi, sekolah dasar di kota bekasi, sekolah dasar terbaik di bekasi, sekolah dasar unggulan di bekasi">
     <meta property="og:title" content="<?= $og_meta['title'] ?>">
@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/magnific-popup.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/nice-select.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/custom-animation.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/glightbox/css/glightbox.min.css'); ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
 
     <!-- Theme / Main CSS -->

@@ -1,6 +1,6 @@
 <!-- blog-area-start -->
 <section class="it-blog-2-area z-index-1 pt-130 pb-130 fix" style="background-color: #fafafa;">
-    <img class="it-course-shape-12" src="<?= base_url('assets/img/shape/course-3-1.png'); ?>" alt="">
+    <img class="it-course-shape-12" src="<?= base_url('assets/img/shape/course-3-1.webp'); ?>" alt="">
     <img class="it-course-shape-13" src="<?= base_url('assets/img/shape/course-3-3.png'); ?>" alt="">
     <div class="container">
         <div class="row">

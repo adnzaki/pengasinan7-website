@@ -1,4 +1,4 @@
-<div class="it-breadcrumb-area team-details-style it-breadcrumb-course-details-style fix z-index-1" data-background="<?= base_url() ?>assets/img/shape/breadcrumb-details-bg.png">
+<div class="it-breadcrumb-area team-details-style it-breadcrumb-course-details-style fix z-index-1" data-background="<?= base_url() ?>assets/img/shape/breadcrumb-details-bg.webp">
     <img class="it-breadcrumb-shape-1" src="<?= base_url() ?>assets/img/shape/breadcrumb-1-1.png" alt="">
     <img class="it-breadcrumb-shape-3" src="<?= base_url() ?>assets/img/shape/breadcrumb-1-2.png" alt="">
     <div class="container">

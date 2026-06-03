@@ -1,7 +1,7 @@
 <!-- course-area-start -->
 <section class="it-course-area it-course-style-3 z-index-1 gray-bg pt-130 pb-130">
     <img class="it-course-shape-10" data-parallax='{"y": -200, "smoothness": 30}' src="<?= base_url('assets/img/shape/course-3-2.png'); ?>" alt="">
-    <img class="it-course-shape-12" src="<?= base_url('assets/img/shape/course-3-1.png'); ?>" alt="">
+    <img class="it-course-shape-12" src="<?= base_url('assets/img/shape/course-3-1.webp'); ?>" alt="">
     <img class="it-course-shape-13" src="<?= base_url('assets/img/shape/course-3-3.png'); ?>" alt="">
     <div class="container">
         <div class="row">
