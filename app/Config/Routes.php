@@ -21,6 +21,8 @@ $routes->group('profil', function (RouteCollection $routes) {
 $routes->get('testimonial', 'Testimonial::index');
 $routes->get('pendaftaran', 'Registration::index');
 $routes->group('kegiatan', function (RouteCollection $routes) {
+    // Redirect to ekstrakurikuler by default
+    $routes->addRedirect('', 'kegiatan/ekstrakurikuler');
     $routes->get('ekstrakurikuler', 'Kegiatan::extracurriculars');
     $routes->get('perlombaan', 'Kegiatan::competitions');
 });
@@ -31,4 +33,6 @@ $routes->group('berita', function (RouteCollection $routes) {
 });
 
 $routes->get('read/(:any)', 'Posts::read/$1');
+$routes->addRedirect('read', 'berita');
+
 $routes->post('add-comment', 'Posts::addComment');
