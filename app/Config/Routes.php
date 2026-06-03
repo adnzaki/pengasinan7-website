@@ -7,6 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->group('profil', function (RouteCollection $routes) {
+    $routes->addRedirect('', 'profil/tentang-sekolah');
     $routes->get('tentang-sekolah', 'Profile::aboutSchool');
     $routes->get('ruang-kelas', 'Profile::rooms');
     $routes->get('pendidik', 'Employee::teachers');
