@@ -80,7 +80,7 @@ class Employee extends BaseController
             'schoolInfo'    => $schoolInfo,
             'employee'      => $employee,
             'og_meta'       => [
-                'title' => $employee['name'] . ' - SDN Pengasinan VII',
+                'title' => $employee['name'] ?? 'PTK' . ' - SDN Pengasinan VII',
                 'image' => $employee['photo']
             ]
         ];
