@@ -73,17 +73,17 @@ class Posts extends BaseController
             insert_visitor();
             
             $this->updateCounter($post->id);
+            $recentPosts = array_filter($this->getRecentPosts(), function($p) use ($post) {
+                return $p->id !== $post->id;
+            });
         }
 
-        $recentPosts = array_filter($this->getRecentPosts(), function($p) use ($post) {
-            return $p->id !== $post->id;
-        });
 
         $pageContent = [
             'post'          => $post,
             'tags'          => wp()->getTags(),
             'comments'      => $comments,
-            'recentPosts'   => $recentPosts,
+            'recentPosts'   => $recentPosts ?? [],
         ];
 
         $postTitle = $post->title ?? 'Post tidak ditemukan';
