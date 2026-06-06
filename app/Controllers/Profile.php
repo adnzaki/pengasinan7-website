@@ -113,6 +113,7 @@ class Profile extends BaseController
             'summary'       => $summary,
             'missions'      => $missions,
             'schoolNames'   => $schoolNames,
+            'orgImage'      => base_url('assets/img/about/organization/struktur.webp'),
             'og_meta'       => [
                 'title' => 'Profil Sekolah - SDN Pengasinan VII',
                 'image' => 'gedung-sekolah.webp'

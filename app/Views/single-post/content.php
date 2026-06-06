@@ -67,7 +67,7 @@
                                             <span class="postbox-tag-title">Tag:</span>
                                             <div class="postbox-tag-content">
                                                 <?php foreach ($post->tags as $tag) : ?>
-                                                    <a class="active" href="<?= base_url('posts/tag/' . $tag->name) ?>"> <?= $tag->name ?> </a>
+                                                    <a class="active" href="<?= base_url('berita/tag/' . $tag->name) ?>"> <?= $tag->name ?> </a>
                                                 <?php endforeach; ?>
                                             </div>
                                         </div>

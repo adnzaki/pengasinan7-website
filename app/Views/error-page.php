@@ -1,14 +1,14 @@
 
 
 <!-- error-area-start -->
-<div class="it-error-area z-index-2 pt-130 pb-130">
+<div class="it-error-area z-index-2 pt-80 pb-130">
     <img class="it-error-shape-1" src="assets/img/shape/error.png" alt="">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xxl-12 col-xl-7 col-lg-7 col-md-10 col-12 col-sm-11">
                 <div class="it-error-wrap">
-                    <div class="it-error-thumb text-center mb-125">
-                        <img src="assets/img/contact/error.png" alt="">
+                    <div class="it-error-thumb text-center mb-30">
+                        <img style="max-height: 200px;" src="<?= base_url(); ?>assets/img/contact/error.png" alt="">
                     </div>
                     <div class="it-error-content text-center">
                         <h5 class="it-error-title  mb-5">404 - Halaman Tidak Ditemukan</h5>

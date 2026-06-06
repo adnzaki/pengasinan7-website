@@ -8,6 +8,10 @@ class Error extends BaseController
         $data = [
             'schoolInfo'    => $this->schoolInfo(),
             'title'         => 'Halaman Tidak Ditemukan',
+            'og_meta'       => [
+                'title' => 'Halaman Tidak Ditemukan - SDN Pengasinan VII',
+                'image' => 'assets/img/contact/error.png'
+            ]
         ];
 
         $views = [
