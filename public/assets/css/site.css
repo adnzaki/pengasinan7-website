@@ -100,8 +100,8 @@ li.timeline-list-title {
 	border-radius: 10px;
 }
 
-ul.wp-block-list li ul.wp-block-list li {
-	margin-left: 20px;
+ul.wp-block-list {
+	margin-left: 15px;
 }
 
 
