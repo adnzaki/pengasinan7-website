@@ -31,6 +31,13 @@
     <!-- Theme / Main CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/spacing.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css'); ?>">
+    <!-- Cronitor RUM -->
+    <script async src="https://rum.cronitor.io/script.js"></script>
+    <script>
+        window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+        cronitor('config', { clientKey: 'bda580624bdfe66f9344dd3762caca45' });
+    </script>
+
     <link rel="stylesheet" href="<?= base_url('assets/css/site.css'); ?>">
 
 </head>

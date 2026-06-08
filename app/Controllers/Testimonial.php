@@ -26,7 +26,7 @@ class Testimonial extends BaseController
             'testimonials2' => array_slice($testimonials, 3, 3),
             'og_meta'       => [
                 'title' => 'Testimonial - SDN Pengasinan VII',
-                'image' => $this->openGraphMeta['image']
+                'image' => base_url('assets/img/slider/sdn-hero-1.webp')
             ]
         ];
 
