@@ -100,6 +100,10 @@ li.timeline-list-title {
 	border-radius: 10px;
 }
 
+ul.wp-block-list li ul.wp-block-list li {
+	margin-left: 20px;
+}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 only screen and (min-width: 768px) and (max-width: 991px),
