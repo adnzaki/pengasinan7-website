@@ -15,7 +15,7 @@
                             <div id="countdown" class="d-flex align-items-center">
                                 <div>
                                     <span id="days">0</span>
-                                    <span class="countdown-heading">Days</span>
+                                    <span class="countdown-heading">hari</span>
                                 </div>
                                 <i>
                                     <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
                                 </i>
                                 <div>
                                     <span id="hours">0</span>
-                                    <span class="countdown-heading">hours</span>
+                                    <span class="countdown-heading">jam</span>
                                 </div>
                                 <i>
                                     <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@
                                 </i>
                                 <div>
                                     <span id="minutes">0</span>
-                                    <span class="countdown-heading">Minute</span>
+                                    <span class="countdown-heading">menit</span>
                                 </div>
                                 <i>
                                     <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@
                                 </i>
                                 <div>
                                     <span id="seconds">0</span>
-                                    <span class="countdown-heading">Second</span>
+                                    <span class="countdown-heading">detik</span>
                                 </div>
                             </div>
                         </div>
