@@ -7,7 +7,9 @@
                     <?php foreach ($posts as $post): ?>
                         <div class="postbox-thumb-box mb-70">
                             <div class="postbox-main-thumb border-radius-20 mb-35">
-                                <img class="w-100 post-thumbnail" src="<?= $post->media ?>" alt="Gambar <?= $post->title ?>">
+                                <a href="<?= $post->url ?>">
+                                    <img class="w-100 post-thumbnail" src="<?= $post->media ?>" alt="Gambar <?= $post->title ?>">
+                                </a>
                             </div>
                             <div class="postbox-content-box">
                                 <div class="it-blog-meta mb-20 d-flex">
