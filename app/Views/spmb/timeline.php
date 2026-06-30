@@ -3,7 +3,7 @@
         <div class="course-info">
             <h5 class="it-details-title-sm mt-35 mb-0">Timeline SPMB</h5>
             <ul>
-                <?php foreach ($timeline as $item): ?>
+                <?php foreach ($timeline['schedules'] as $item): ?>
                     <li class="timeline-list-title">
                         <?= $item['title'] ?>
                     </li>

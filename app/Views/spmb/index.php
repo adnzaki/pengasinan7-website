@@ -9,9 +9,9 @@
                             Sistem Penerimaan Murid Baru <br> Tahun Ajaran 2026/2027
                         </h3>
                     </div>
-                    <p class="text-center">Batas Akhir Pendaftaran Jalur Khusus</p>
+                    <p class="text-center"><?= $timeline['title'] ?></p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <div class="it-event-countdown-time it-date-countdown" data-date="2026-07-01T23:59:59">
+                        <div class="it-event-countdown-time it-date-countdown" data-date="<?= $timeline['current_schedule'] ?>T23:59:59">
                             <div id="countdown" class="d-flex align-items-center">
                                 <div>
                                     <span id="days">0</span>
