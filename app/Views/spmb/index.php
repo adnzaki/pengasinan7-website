@@ -9,9 +9,10 @@
                             Sistem Penerimaan Murid Baru <br> Tahun Ajaran 2026/2027
                         </h3>
                     </div>
-                    <p class="text-center"><?= $timeline['title'] ?></p>
+                    <?php if($timeline['end']): ?>
+                    <p class="text-center"><?= $timeline['end']['title'] ?></p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <div class="it-event-countdown-time it-date-countdown" data-date="<?= $timeline['current_schedule'] ?>T23:59:59">
+                        <div class="it-event-countdown-time it-date-countdown" data-date="<?= $timeline['end']['current_schedule'] ?>T23:59:59">
                             <div id="countdown" class="d-flex align-items-center">
                                 <div>
                                     <span id="days">0</span>
@@ -50,6 +51,9 @@
                             </div>
                         </div>
                     </div>
+                    <?php else: ?>
+                    <p class="text-center">SPMB Tahun Ajaran 2026/2027 telah ditutup.</p>
+                    <?php endif; ?>
                     <div class="d-flex align-items-center justify-content-center mt-30">
                         <?= view('spmb/register-button') ?>
                     </div>

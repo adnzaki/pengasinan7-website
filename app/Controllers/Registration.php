@@ -61,19 +61,26 @@ class Registration extends BaseController
         ];
 
         $today = date('Y-m-d'); // Mengambil tanggal hari ini (Format: YYYY-MM-DD)
-        $current_schedule = null;
+        $currentSchedule = null;
 
         foreach ($schedules as $schedule) {
             if ($schedule['end'] >= $today) {
-                $current_schedule = $schedule;
+                $currentSchedule = $schedule;
                 break;
             }
         }
 
+        $endOfRegistration = null;
+        if ($currentSchedule) {
+            $endOfRegistration = [
+                'current_schedule' => $currentSchedule['end'],
+                'title' => 'Batas Akhir ' . $currentSchedule['title']
+            ];
+        } 
+
         return [
             'schedules' => $schedules,
-            'current_schedule' => $current_schedule['end'],
-            'title' => 'Batas Akhir ' . $current_schedule['title']
+            'end'       => $endOfRegistration
         ];
     }
 
