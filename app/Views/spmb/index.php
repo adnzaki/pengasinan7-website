@@ -9,50 +9,51 @@
                             Sistem Penerimaan Murid Baru <br> Tahun Ajaran 2026/2027
                         </h3>
                     </div>
-                    <?php if($timeline['end']): ?>
-                    <p class="text-center"><?= $timeline['end']['title'] ?></p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div class="it-event-countdown-time it-date-countdown" data-date="<?= $timeline['end']['current_schedule'] ?>T23:59:59">
-                            <div id="countdown" class="d-flex align-items-center">
-                                <div>
-                                    <span id="days">0</span>
-                                    <span class="countdown-heading">hari</span>
-                                </div>
-                                <i>
-                                    <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="3.98047" cy="3.5" r="3.5" fill="#1F2432" />
-                                        <circle cx="3.98047" cy="16.5" r="3.5" fill="#1F2432" />
-                                    </svg>
-                                </i>
-                                <div>
-                                    <span id="hours">0</span>
-                                    <span class="countdown-heading">jam</span>
-                                </div>
-                                <i>
-                                    <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="3.98047" cy="3.5" r="3.5" fill="#1F2432" />
-                                        <circle cx="3.98047" cy="16.5" r="3.5" fill="#1F2432" />
-                                    </svg>
-                                </i>
-                                <div>
-                                    <span id="minutes">0</span>
-                                    <span class="countdown-heading">menit</span>
-                                </div>
-                                <i>
-                                    <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="3.98047" cy="3.5" r="3.5" fill="#1F2432" />
-                                        <circle cx="3.98047" cy="16.5" r="3.5" fill="#1F2432" />
-                                    </svg>
-                                </i>
-                                <div>
-                                    <span id="seconds">0</span>
-                                    <span class="countdown-heading">detik</span>
+                    <?php if ($timeline['end']): ?>
+                        <!-- <p class="text-center"><?//= $timeline['end']['title'] ?></p> -->
+                        <p class="text-center">Batas Akhir Daftar Ulang Jalur Khusus</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="it-event-countdown-time it-date-countdown" data-date="2026-07-04T23:59:59">
+                                <div id="countdown" class="d-flex align-items-center">
+                                    <div>
+                                        <span id="days">0</span>
+                                        <span class="countdown-heading">hari</span>
+                                    </div>
+                                    <i>
+                                        <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="3.98047" cy="3.5" r="3.5" fill="#1F2432" />
+                                            <circle cx="3.98047" cy="16.5" r="3.5" fill="#1F2432" />
+                                        </svg>
+                                    </i>
+                                    <div>
+                                        <span id="hours">0</span>
+                                        <span class="countdown-heading">jam</span>
+                                    </div>
+                                    <i>
+                                        <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="3.98047" cy="3.5" r="3.5" fill="#1F2432" />
+                                            <circle cx="3.98047" cy="16.5" r="3.5" fill="#1F2432" />
+                                        </svg>
+                                    </i>
+                                    <div>
+                                        <span id="minutes">0</span>
+                                        <span class="countdown-heading">menit</span>
+                                    </div>
+                                    <i>
+                                        <svg width="8" height="20" viewBox="0 0 8 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="3.98047" cy="3.5" r="3.5" fill="#1F2432" />
+                                            <circle cx="3.98047" cy="16.5" r="3.5" fill="#1F2432" />
+                                        </svg>
+                                    </i>
+                                    <div>
+                                        <span id="seconds">0</span>
+                                        <span class="countdown-heading">detik</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     <?php else: ?>
-                    <p class="text-center">SPMB Tahun Ajaran 2026/2027 telah ditutup.</p>
+                        <p class="text-center">SPMB Tahun Ajaran 2026/2027 telah ditutup.</p>
                     <?php endif; ?>
                     <div class="d-flex align-items-center justify-content-center mt-30">
                         <?= view('spmb/register-button') ?>
