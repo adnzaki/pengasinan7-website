@@ -11,9 +11,9 @@
                     </div>
                     <?php if ($timeline['end']): ?>
                         <!-- <p class="text-center"><?//= $timeline['end']['title'] ?></p> -->
-                        <p class="text-center">Pendaftaran Jalur Umum akan dibuka dalam</p>
+                        <p class="text-center">Batas Akhir Pendaftaran Jalur Umum</p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <div class="it-event-countdown-time it-date-countdown" data-date="2026-07-06T08:00:00">
+                            <div class="it-event-countdown-time it-date-countdown" data-date="2026-07-08T21:00:00">
                                 <div id="countdown" class="d-flex align-items-center">
                                     <div>
                                         <span id="days">0</span>
