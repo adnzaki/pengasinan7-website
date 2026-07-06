@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="it-team-btn text-center mt-45">
-                    <a href="#" class="it-btn-yellow border-radius-100">
+                    <a href="<?= base_url('kegiatan/ekstrakurikuler'); ?>" class="it-btn-yellow border-radius-100">
                         <span>
                             <span class="text-1">Lihat Semua Ekskul</span>
                             <span class="text-2">Lihat Semua Ekskul</span>
