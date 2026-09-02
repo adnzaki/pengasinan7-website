@@ -83,7 +83,7 @@ class Profile extends BaseController
             ],
             [
                 'title' => 'Peserta Didik',
-                'value' => '468'
+                'value' => '458'
             ],
             [
                 'title' => 'Pegawai',
