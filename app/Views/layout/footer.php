@@ -18,7 +18,7 @@
                                 <p>SDN Pengasinan VII berkomitmen dalam membentuk generasi berprestasi, berakhlak mulia dan berkarakter yang siap menghadapi masa depan.</p>
                             </div>
                             <div class="it-footer-widget-btn">
-                                <a href="<?= $schoolInfo['walink'] ?>" target="_blank" class="it-btn-yellow theme-bg border-radius-100">
+                                <a href="<?= $schoolInfo['mailto'] ?>" target="_blank" class="it-btn-yellow theme-bg border-radius-100">
                                     <span>
                                         <span class="text-1">Hubungi Kami</span>
                                         <span class="text-2">Hubungi Kami</span>
@@ -53,7 +53,7 @@
                                 <div class="it-footer-widget-contact mb-25">
                                     <ul>
                                         <!-- <li><span>Phone:</span><a href="tel:+91123456789">(+91) 123-456-789</a></li> -->
-                                        <li><span>Email:</span><a href="mailto:sdnpengasinantujuh@gmail.com">sdnpengasinantujuh@gmail.com</a></li>
+                                        <li><span>Email:</span><a href="<?= $schoolInfo['mailto'] ?>">sdnpengasinantujuh@gmail.com</a></li>
                                         <li><span>Alamat:</span><a target="_blank" href="<?= $schoolInfo['maps'] ?>"><?= $schoolInfo['address'] ?></a></li>
                                         <li><span>Kec, Kab/Kota:</span><a target="_blank" href="<?= $schoolInfo['maps'] ?>"><?= $schoolInfo['city'] ?></a></li>
 

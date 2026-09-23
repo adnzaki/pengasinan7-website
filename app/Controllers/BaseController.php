@@ -66,6 +66,7 @@ abstract class BaseController extends Controller
             'maps'      => 'https://maps.app.goo.gl/6WBZfv9hMysy5BWA9',
             'waspmb'    => 'https://api.whatsapp.com/send?phone=6285111519914&text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20SPMB%20Tahun%20Ajaran%202026%2F2027.',
             'walink'    => 'https://api.whatsapp.com/send?phone=6285111519914&text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20SDN%20Pengasinan%20VII.',
+            'mailto'    => 'mailto:sdnpengasinantujuh@gmail.com',
         ];
     }
 }

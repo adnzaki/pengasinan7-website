@@ -22,12 +22,12 @@
 
             <div class="contact-section">
                 <p class="mt-30 mb-30">Butuh Bantuan?</p>
-                <a href="<?= $schoolInfo['waspmb'] ?>" target="_blank">
-                    <div class="call-box w-100">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        Hubungi Kami: 0851-1151-9914
-                    </div>
-                </a>
+                <div class="call-box w-100">
+                    Hubungi Kami: <a href="<?= $schoolInfo['mailto'] ?>" target="_blank">sdnpengasinantujuh@gmail.com</a>
+                    <br /><br />
+                    <p>atau kunjungi langsung di:</p>
+                    <p><?= $schoolInfo['address'] ?>, <?= $schoolInfo['city'] ?></p>
+                </div>
             </div>
         </div>
     </div>
